@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    public partial class Form1 : Form
+    public partial class CBNespresso : Form
     {
-        public Form1()
+        public CBNespresso()
         {
             InitializeComponent();
         }
