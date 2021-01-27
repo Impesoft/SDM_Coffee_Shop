@@ -33,7 +33,6 @@ namespace SDM_Coffee_Shop
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.button1 = new System.Windows.Forms.Button();
             this.userControl15 = new SDM_Coffee_Shop.UserControls.UserControl1();
-            this.userControl11 = new SDM_Coffee_Shop.UserControls.UserControl1();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -59,7 +58,6 @@ namespace SDM_Coffee_Shop
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.userControl15);
-            this.splitContainer1.Panel1.Controls.Add(this.userControl11);
             // 
             // splitContainer1.Panel2
             // 
@@ -86,14 +84,6 @@ namespace SDM_Coffee_Shop
             this.userControl15.Size = new System.Drawing.Size(366, 551);
             this.userControl15.TabIndex = 4;
             // 
-            // userControl11
-            // 
-            this.userControl11.Location = new System.Drawing.Point(18, 18);
-            this.userControl11.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(366, 551);
-            this.userControl11.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -116,7 +106,6 @@ namespace SDM_Coffee_Shop
 
         private System.Windows.Forms.Label lblCoffee;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private UserControls.UserControl1 userControl11;
         private UserControls.UserControl1 userControl15;
         private System.Windows.Forms.Button button1;
     }
