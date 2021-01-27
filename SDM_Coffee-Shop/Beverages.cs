@@ -1,11 +1,8 @@
 ﻿namespace SDM_Coffee_Shop
 {
-    public class Beverages
+    public abstract class Beverages
     {
-    
         private double _price;
-
-
         public double Price
         {
             get { return _price; }
@@ -24,17 +21,8 @@
         {
             string result = $"{Price.ToString()}, {Description}, {ID}, {Image}, {Name}";
             return result;
-
         }
-
     }
-
-
-     
-    
-    
-
- 
 
 
 }

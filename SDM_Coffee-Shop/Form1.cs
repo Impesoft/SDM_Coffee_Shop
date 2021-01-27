@@ -2,9 +2,9 @@
 
 namespace SDM_Coffee_Shop
 {
-    public partial class CBNespresso : Form
+    public partial class Form1 : Form
     {
-        public CBNespresso()
+        public Form1()
         {
             InitializeComponent();
         }

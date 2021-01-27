@@ -13,7 +13,7 @@ namespace SDM_Coffee_Shop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CBNespresso());
+            Application.Run(new Form1());
         }
     }
 }
