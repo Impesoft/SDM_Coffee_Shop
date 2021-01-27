@@ -30,60 +30,119 @@ namespace SDM_Coffee_Shop
         private void InitializeComponent()
         {
             this.lblCoffee = new System.Windows.Forms.Label();
-            this.LblTea = new System.Windows.Forms.Label();
-            this.LblSmoothie = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.userControl11 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl12 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl13 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl14 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl15 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl16 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl17 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.userControl18 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCoffee
             // 
             this.lblCoffee.AutoSize = true;
-            this.lblCoffee.Location = new System.Drawing.Point(35, 29);
+            this.lblCoffee.Location = new System.Drawing.Point(26, 24);
+            this.lblCoffee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCoffee.Name = "lblCoffee";
-            this.lblCoffee.Size = new System.Drawing.Size(49, 17);
+            this.lblCoffee.Size = new System.Drawing.Size(35, 13);
             this.lblCoffee.TabIndex = 0;
-            this.lblCoffee.Text = "Coffee";
+            this.lblCoffee.Text = "label1";
             // 
-            // LblTea
+            // splitContainer1
             // 
-            this.LblTea.AutoSize = true;
-            this.LblTea.Location = new System.Drawing.Point(169, 29);
-            this.LblTea.Name = "LblTea";
-            this.LblTea.Size = new System.Drawing.Size(33, 17);
-            this.LblTea.TabIndex = 1;
-            this.LblTea.Text = "Tea";
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // LblSmoothie
+            // splitContainer1.Panel1
             // 
-            this.LblSmoothie.AutoSize = true;
-            this.LblSmoothie.Location = new System.Drawing.Point(302, 28);
-            this.LblSmoothie.Name = "LblSmoothie";
-            this.LblSmoothie.Size = new System.Drawing.Size(74, 17);
-            this.LblSmoothie.TabIndex = 2;
-            this.LblSmoothie.Text = "Smoothies";
+            this.splitContainer1.Panel1.Controls.Add(this.userControl18);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl17);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl16);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl15);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl14);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl13);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl12);
+            this.splitContainer1.Panel1.Controls.Add(this.userControl11);
+            this.splitContainer1.Size = new System.Drawing.Size(1393, 928);
+            this.splitContainer1.SplitterDistance = 1025;
+            this.splitContainer1.TabIndex = 1;
             // 
-            // checkBox1
+            // userControl11
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(38, 62);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 21);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.userControl11.Location = new System.Drawing.Point(12, 12);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(244, 358);
+            this.userControl11.TabIndex = 0;
             // 
-            // CBNespresso
+            // userControl12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.userControl12.Location = new System.Drawing.Point(262, 12);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(244, 358);
+            this.userControl12.TabIndex = 1;
+            // 
+            // userControl13
+            // 
+            this.userControl13.Location = new System.Drawing.Point(512, 12);
+            this.userControl13.Name = "userControl13";
+            this.userControl13.Size = new System.Drawing.Size(244, 358);
+            this.userControl13.TabIndex = 2;
+            // 
+            // userControl14
+            // 
+            this.userControl14.Location = new System.Drawing.Point(762, 12);
+            this.userControl14.Name = "userControl14";
+            this.userControl14.Size = new System.Drawing.Size(244, 358);
+            this.userControl14.TabIndex = 3;
+            // 
+            // userControl15
+            // 
+            this.userControl15.Location = new System.Drawing.Point(12, 394);
+            this.userControl15.Name = "userControl15";
+            this.userControl15.Size = new System.Drawing.Size(244, 358);
+            this.userControl15.TabIndex = 4;
+            // 
+            // userControl16
+            // 
+            this.userControl16.Location = new System.Drawing.Point(262, 394);
+            this.userControl16.Name = "userControl16";
+            this.userControl16.Size = new System.Drawing.Size(244, 358);
+            this.userControl16.TabIndex = 5;
+            // 
+            // userControl17
+            // 
+            this.userControl17.Location = new System.Drawing.Point(512, 394);
+            this.userControl17.Name = "userControl17";
+            this.userControl17.Size = new System.Drawing.Size(244, 358);
+            this.userControl17.TabIndex = 6;
+            // 
+            // userControl18
+            // 
+            this.userControl18.Location = new System.Drawing.Point(762, 394);
+            this.userControl18.Name = "userControl18";
+            this.userControl18.Size = new System.Drawing.Size(244, 358);
+            this.userControl18.TabIndex = 7;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.LblSmoothie);
-            this.Controls.Add(this.LblTea);
+            this.ClientSize = new System.Drawing.Size(1393, 928);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "CBNespresso";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Form1";
             this.Text = "SDM Coffee Shop ";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,9 +151,15 @@ namespace SDM_Coffee_Shop
         #endregion
 
         private System.Windows.Forms.Label lblCoffee;
-        private System.Windows.Forms.Label LblTea;
-        private System.Windows.Forms.Label LblSmoothie;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private UserControls.UserControl1 userControl11;
+        private UserControls.UserControl1 userControl18;
+        private UserControls.UserControl1 userControl17;
+        private UserControls.UserControl1 userControl16;
+        private UserControls.UserControl1 userControl15;
+        private UserControls.UserControl1 userControl14;
+        private UserControls.UserControl1 userControl13;
+        private UserControls.UserControl1 userControl12;
     }
 }
 
