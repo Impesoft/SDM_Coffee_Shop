@@ -10,7 +10,12 @@ namespace SDM_Coffee_Shop
     {
         public IBeverage GetBeverage(int id)
         {
-            throw new NotImplementedException();
+            List<IBeverage> allBeverages = GetBeverages();
+
+            // LAMBDA Expression. Return the first object in which the ID property equals user input
+            var selectedBeverage = allBeverages.Where(x => x.ID == id).FirstOrDefault();
+
+            return selectedBeverage;
         }
 
         public List<IBeverage> GetBeverages()
