@@ -5,12 +5,6 @@ namespace SDM_Coffee_Shop
 {
     internal class Mint : Tea
     {
-        public enum typeOfTea
-        {
-            peppermint = 1,
-            spearmint = 2,
-        };
-
         public typeOfTea TypeOfTea { get; set; }
 
         public Mint()
