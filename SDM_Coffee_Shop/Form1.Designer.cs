@@ -32,7 +32,7 @@ namespace SDM_Coffee_Shop
             this.lblCoffee = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.button1 = new System.Windows.Forms.Button();
-            this.userControl15 = new SDM_Coffee_Shop.UserControls.UserControl1();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -57,7 +57,7 @@ namespace SDM_Coffee_Shop
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.userControl15);
+            this.splitContainer1.Panel1.Controls.Add(this.flowLayoutPanel1);
             // 
             // splitContainer1.Panel2
             // 
@@ -76,13 +76,13 @@ namespace SDM_Coffee_Shop
             this.button1.Text = "Nieuwe DriesKnop";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // userControl15
+            // flowLayoutPanel1
             // 
-            this.userControl15.Location = new System.Drawing.Point(18, 606);
-            this.userControl15.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.userControl15.Name = "userControl15";
-            this.userControl15.Size = new System.Drawing.Size(366, 551);
-            this.userControl15.TabIndex = 4;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1537, 1428);
+            this.flowLayoutPanel1.TabIndex = 5;
             // 
             // Form1
             // 
@@ -106,8 +106,8 @@ namespace SDM_Coffee_Shop
 
         private System.Windows.Forms.Label lblCoffee;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private UserControls.UserControl1 userControl15;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

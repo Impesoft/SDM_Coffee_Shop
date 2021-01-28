@@ -9,7 +9,7 @@ namespace SDM_Coffee_Shop
 {
     internal class Deca : Coffee
     {
-        public Deca(int caffeine, bool hasMilk, bool hasSugar)
+        public Deca(int caffeine = 0, bool hasMilk = false, bool hasSugar = false)
            : base(caffeine, hasMilk, hasSugar)
         {
             Name = "Deca";

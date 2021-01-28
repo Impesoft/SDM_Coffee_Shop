@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SDM_Coffee_Shop
 {
-    internal class Milkshake : Beverage
+    internal abstract class Milkshake : Beverage
     {
         public bool HasDairy { get; set; }
         public bool HasWhippedCream { get; set; }
 
-        public Milkshake(bool hasDairy, bool hasWhippedCream)
+        public Milkshake(bool hasDairy = false, bool hasWhippedCream = false)
 
         {
             HasDairy = hasDairy;

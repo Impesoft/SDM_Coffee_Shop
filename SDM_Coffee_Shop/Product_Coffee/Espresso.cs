@@ -9,12 +9,9 @@ namespace SDM_Coffee_Shop.Product_Coffee
 {
     internal class Espresso : Coffee
     {
-        public string Roast { get; set; }
-
-        public Espresso(int caffeine, bool hasMilk, bool hasSugar, string roast)
+        public Espresso(int caffeine = 0, bool hasMilk = false, bool hasSugar = false)
             : base(caffeine, hasMilk, hasSugar)
         {
-            Roast = roast;
             Name = "Espresso";
             Price = 2.99;
             Image = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + "IMG\\espresso.jpg";

@@ -11,7 +11,7 @@ namespace SDM_Coffee_Shop.Product_Tea
     {
         public int AmountOfCubes { get; set; }
 
-        public Iced(int theine, bool hasMilk, bool hasSugar, int amountOfCubes)
+        public Iced(int theine = 0, bool hasMilk = false, bool hasSugar = false, int amountOfCubes = 0)
            : base(theine, hasMilk, hasSugar)
         {
             AmountOfCubes = amountOfCubes;

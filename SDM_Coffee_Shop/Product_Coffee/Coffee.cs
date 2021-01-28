@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SDM_Coffee_Shop
 {
-    public abstract class Coffee : Beverage
+    internal abstract class Coffee : Beverage
     {
         public int Caffeine { get; set; }
 
