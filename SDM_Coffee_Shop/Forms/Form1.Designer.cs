@@ -32,7 +32,10 @@ namespace SDM_Coffee_Shop
             this.lblCoffee = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblPrice = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnClearCart = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -61,6 +64,9 @@ namespace SDM_Coffee_Shop
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.flowLayoutPanel2);
+            this.splitContainer1.Panel2.Controls.Add(this.btnClearCart);
+            this.splitContainer1.Panel2.Controls.Add(this.lblPrice);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Size = new System.Drawing.Size(2172, 1598);
             this.splitContainer1.SplitterDistance = 1596;
@@ -72,18 +78,48 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1596, 1598);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(165, 1039);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(183, 39);
+            this.lblPrice.TabIndex = 1;
+            this.lblPrice.Text = "Total Price";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(160, 154);
+            this.button1.Location = new System.Drawing.Point(23, 24);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(219, 80);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Nieuwe DriesKnop";
+            this.button1.Text = "Bereken Prijs";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnClearCart
+            // 
+            this.btnClearCart.Location = new System.Drawing.Point(208, 24);
+            this.btnClearCart.Name = "btnClearCart";
+            this.btnClearCart.Size = new System.Drawing.Size(136, 53);
+            this.btnClearCart.TabIndex = 2;
+            this.btnClearCart.Text = "Maak Leeg";
+            this.btnClearCart.UseVisualStyleBackColor = true;
+            this.btnClearCart.Click += new System.EventHandler(this.btnClearCart_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(27, 137);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(321, 849);
+            this.flowLayoutPanel2.TabIndex = 3;
             // 
             // Form1
             // 
@@ -92,10 +128,12 @@ namespace SDM_Coffee_Shop
             this.ClientSize = new System.Drawing.Size(2172, 1598);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "SDM Coffee Shop ";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -109,6 +147,9 @@ namespace SDM_Coffee_Shop
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Button btnClearCart;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 

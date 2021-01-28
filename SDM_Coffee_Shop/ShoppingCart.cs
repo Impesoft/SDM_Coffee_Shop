@@ -27,9 +27,30 @@ namespace SDM_Coffee_Shop
             return _cart;
         }
 
+        public double CalculatePrice()
+        {
+            double totalPrice = 0;
+            foreach (var beverage in _beverages)
+            {
+                totalPrice += beverage.Price;
+            }
+
+            return totalPrice;
+        }
+
         public void AddBeverageToCart(IBeverage beverage)
         {
             _beverages.Add(beverage);
+        }
+
+        public List<IBeverage> GetBeveragesInCart()
+        {
+            return _beverages;
+        }
+
+        public void ClearCart()
+        {
+            _beverages.Clear();
         }
     }
 }
