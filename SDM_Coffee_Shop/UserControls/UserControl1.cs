@@ -25,7 +25,8 @@ namespace SDM_Coffee_Shop.UserControls
             //TODO
             //_cart = ShoppingCart.GetShoppingCart();
             _repo = new BeverageRepo();
-        }   
+        }
+
         public int ID { get; set; }
 
         public string MyProductName
@@ -48,12 +49,17 @@ namespace SDM_Coffee_Shop.UserControls
                 {
                     ResourceManager rm = Properties.Resources.ResourceManager;
                     Bitmap myImage = (Bitmap)rm.GetObject(value);
-                    
-                                      
+
                     btnInfo.BackgroundImage = myImage;
-                    
                 }
             }
+        }
+
+        private void btnInfosmall_Click(object sender, EventArgs e)
+        {
+            FormAbout form = new FormAbout();
+            form.Show();
+            //form.imgAb
         }
 
         //public void btnCart_Click(object sender, System.EventArgs e)

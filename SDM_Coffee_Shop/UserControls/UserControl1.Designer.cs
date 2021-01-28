@@ -76,6 +76,7 @@ namespace SDM_Coffee_Shop.UserControls
             this.btnInfosmall.TabIndex = 4;
             this.btnInfosmall.Text = "info";
             this.btnInfosmall.UseVisualStyleBackColor = true;
+            this.btnInfosmall.Click += new System.EventHandler(this.btnInfosmall_Click);
             // 
             // btnInfo
             // 
