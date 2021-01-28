@@ -11,13 +11,11 @@ namespace SDM_Coffee_Shop
     {
         public typeOfChocolate TypeOfChocolate { get; set; }
 
-        public Chocolate(bool hasDairy = false, bool hasWhippedCream = false, typeOfChocolate typeOfChocolate = typeOfChocolate.Milk)
-            : base(hasDairy, hasWhippedCream)
+        public Chocolate()
         {
-            TypeOfChocolate = typeOfChocolate;
             Name = "Chocolate Shake";
             Price = 5.99;
-            Image = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + "IMG\\chocolate.jpg";
+            Image = "chocolate";
             Description = "Three simple ingredients are all it takes to make an easy homemade chocolate milkshake. Vanilla ice cream, ice cold milk, HERSHEY'S Syrup. Blend, pour, sip.";
         }
     }

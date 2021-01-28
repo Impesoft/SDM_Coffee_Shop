@@ -11,13 +11,12 @@ namespace SDM_Coffee_Shop
     {
         public bool IsFrozenFruit { get; set; }
 
-        public Banana(bool hasDairy = false, bool hasWhippedCream = false, bool isFrozenFruit = false)
-            : base(hasDairy, hasWhippedCream)
+        public Banana()
         {
-            IsFrozenFruit = isFrozenFruit;
+            
             Name = "Banana Shake";
             Price = 5.99;
-            Image = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + "IMG\\banana.jpg";
+            Image = "banana";
             Description = "With a few ingredients, a banana milkshake is easy to make and is super satisfying. It can be made in minutes. What's not to like?! Now the question is, with dairy or without?";
         }
     }

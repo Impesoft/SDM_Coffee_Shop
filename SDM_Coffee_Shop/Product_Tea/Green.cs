@@ -9,12 +9,11 @@ namespace SDM_Coffee_Shop
 {
     internal class Green : Tea
     {
-        public Green(int theine = 0, bool hasMilk = false, bool hasSugar = false)
-           : base(theine, hasMilk, hasSugar)
+        public Green()
         {
             Name = "Green Tea";
             Price = 2.99;
-            Image = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + "IMG\\green.jpg";
+            Image = "green";
             Description = "Green tea is a type of tea that is made from Camellia sinensis leaves and buds that have not undergone the same withering and oxidation process used to make oolong teas and black teas. Green tea originated in China, but its production and manufacture has spread to other countries in East Asia.";
         }
     }

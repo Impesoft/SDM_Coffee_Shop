@@ -91,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
@@ -107,6 +108,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cappuccino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espresso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iced.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strawberry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vanilla.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

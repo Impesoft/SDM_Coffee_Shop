@@ -14,12 +14,13 @@ namespace SDM_Coffee_Shop
 
         public bool HasSugar { get; set; }
 
-        protected Coffee(int caffeine, bool hasMilk, bool hasSugar)
+        protected Coffee()
 
         {
-            Caffeine = caffeine;
-            HasMilk = hasMilk;
-            HasSugar = hasSugar;
+            //Caffeine = caffeine;
+            //HasMilk = hasMilk;
+            //HasSugar = hasSugar;
         }
+        //int caffeine, bool hasMilk, bool hasSugar
     }
 }

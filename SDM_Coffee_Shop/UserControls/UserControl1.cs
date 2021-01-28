@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,10 +25,7 @@ namespace SDM_Coffee_Shop.UserControls
             //TODO
             //_cart = ShoppingCart.GetShoppingCart();
             _repo = new BeverageRepo();
-        }
-        
-
-       
+        }   
         public int ID { get; set; }
 
         public string MyProductName
@@ -42,21 +40,18 @@ namespace SDM_Coffee_Shop.UserControls
             set { lblPrice.Text = value; }
         }
 
-        
-
-        
-
-        private string _image;
-
         public string Image
         {
             set
             {
                 if (value != null)
                 {
-                    _image = value;
-                    //btnInfo.BackgroundImage = _image;
-                    //pictureBox1.Load(_image);
+                    ResourceManager rm = Properties.Resources.ResourceManager;
+                    Bitmap myImage = (Bitmap)rm.GetObject(value);
+                    
+                                      
+                    btnInfo.BackgroundImage = myImage;
+                    
                 }
             }
         }

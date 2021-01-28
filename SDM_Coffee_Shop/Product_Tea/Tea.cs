@@ -8,11 +8,9 @@
 
         public bool HasSugar { get; set; }
 
-        public Tea(int theine, bool hasMilk, bool hasSugar)
+        public Tea()
         {
-            Theine = theine;
-            HasMilk = hasMilk;
-            HasSugar = hasSugar;
+            
         }
     }
 }
