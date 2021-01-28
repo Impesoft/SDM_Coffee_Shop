@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SDM_Coffee_Shop
 {
-    interface IBeverage
+    internal interface IBeverage
     {
         double Price { get; set; }
 
@@ -19,6 +19,5 @@ namespace SDM_Coffee_Shop
         string Name { get; set; }
 
         string ToString();
-       
     }
 }

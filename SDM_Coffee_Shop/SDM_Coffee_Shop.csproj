@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum.cs" />
     <Compile Include="Product_Coffee\Americano.cs" />
     <Compile Include="Beverage.cs" />
     <Compile Include="Product_Coffee\Cappuccino.cs" />
