@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SDM_Coffee_Shop.Product_Tea
+namespace SDM_Coffee_Shop
 {
     internal class Green : Tea
     {
-        public Green(int theine, bool hasMilk, bool hasSugar)
+        public Green(int theine = 0, bool hasMilk = false, bool hasSugar = false)
            : base(theine, hasMilk, hasSugar)
         {
             Name = "Green Tea";

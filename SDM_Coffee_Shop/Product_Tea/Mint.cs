@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SDM_Coffee_Shop.Product_Tea
+namespace SDM_Coffee_Shop
 {
     internal class Mint : Tea
     {
