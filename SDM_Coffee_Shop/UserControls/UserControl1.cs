@@ -13,17 +13,14 @@ namespace SDM_Coffee_Shop.UserControls
 {
     public partial class UserControl1 : UserControl
     {
-        //TODO
-
-        //private ShoppingCart _cart;
+        private ShoppingCart _cart;
         private IBeverageRepo _repo;
 
         public UserControl1()
         {
             InitializeComponent();
-
-            //TODO
-            //_cart = ShoppingCart.GetShoppingCart();
+            
+            _cart = ShoppingCart.GetShoppingCart();
             _repo = new BeverageRepo();
         }   
         public int ID { get; set; }
@@ -47,19 +44,17 @@ namespace SDM_Coffee_Shop.UserControls
                 if (value != null)
                 {
                     ResourceManager rm = Properties.Resources.ResourceManager;
-                    Bitmap myImage = (Bitmap)rm.GetObject(value);
-                    
+                    Bitmap myImage = (Bitmap)rm.GetObject(value);                    
                                       
-                    btnInfo.BackgroundImage = myImage;
-                    
+                    btnInfo.BackgroundImage = myImage;                    
                 }
             }
         }
 
-        //public void btnCart_Click(object sender, System.EventArgs e)
-        //{
-        //    var pizza = _repo.GetPizza(PizzaID);
-        //    _cart.AddProductToCart(pizza);
-        //}
+        private void btnAddToCart_Click(object sender, EventArgs e)
+        {
+            var beverage = _repo.GetBeverage(ID);
+            _cart.AddBeverageToCart(beverage);
+        }        
     }
 }

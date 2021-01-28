@@ -53,6 +53,7 @@
     <Compile Include="Cocktails\WhiteRussian.cs" />
     <Compile Include="Interfaces\IBeverageRepo.cs" />
     <Compile Include="Enum.cs" />
+    <Compile Include="Interfaces\IShoppingCart.cs" />
     <Compile Include="Product_Coffee\Americano.cs" />
     <Compile Include="Beverage.cs" />
     <Compile Include="Product_Coffee\Cappuccino.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Product_Tea\Tea.cs" />
+    <Compile Include="ShoppingCart.cs" />
     <Compile Include="UserControls\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
