@@ -163,6 +163,26 @@ namespace SDM_Coffee_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pina {
+            get {
+                object obj = ResourceManager.GetObject("pina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pina1 {
+            get {
+                object obj = ResourceManager.GetObject("pina1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap strawberry {
             get {
                 object obj = ResourceManager.GetObject("strawberry", resourceCulture);
@@ -176,6 +196,56 @@ namespace SDM_Coffee_Shop.Properties {
         internal static System.Drawing.Bitmap vanilla {
             get {
                 object obj = ResourceManager.GetObject("vanilla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vanilla1 {
+            get {
+                object obj = ResourceManager.GetObject("vanilla1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhiteRussian {
+            get {
+                object obj = ResourceManager.GetObject("WhiteRussian", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhiteRussian1 {
+            get {
+                object obj = ResourceManager.GetObject("WhiteRussian1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wsour {
+            get {
+                object obj = ResourceManager.GetObject("wsour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wsour1 {
+            get {
+                object obj = ResourceManager.GetObject("wsour1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

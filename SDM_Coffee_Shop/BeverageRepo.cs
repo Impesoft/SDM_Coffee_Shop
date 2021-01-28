@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SDM_Coffee_Shop
 {
-    class BeverageRepo : IBeverageRepo
+    internal class BeverageRepo : IBeverageRepo
     {
         public IBeverage GetBeverage(int id)
         {
@@ -28,12 +28,13 @@ namespace SDM_Coffee_Shop
                 new Banana(),
                 new Chocolate(),
                 new Strawberry(),
-                new Vanilla()
-
+                new Vanilla(),
+                new WhiteRussian(),
+                new PinaColada(),
+                new WhiskeySour(),
             };
 
             return beverages;
-
         }
     }
 }
