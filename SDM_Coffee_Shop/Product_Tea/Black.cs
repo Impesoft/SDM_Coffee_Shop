@@ -9,7 +9,7 @@ namespace SDM_Coffee_Shop.Product_Tea
 {
     internal class Black : Tea
     {
-        public Black(int theine, bool hasMilk, bool hasSugar)
+        public Black(int theine = 0, bool hasMilk = false, bool hasSugar = false)
           : base(theine, hasMilk, hasSugar)
         {
             Name = "Black Tea";

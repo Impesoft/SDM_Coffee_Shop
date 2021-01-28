@@ -19,12 +19,8 @@
 
         public string Name { get; set; }
 
-        protected Beverage(string name = "noName", double price = 3.99, string image = "http://placekitten.com/256/256", string description = "")
+        protected Beverage()
         {
-            Name = name;
-            Price = price;
-            Image = image;
-            Description = description;
             ID = PID;
             PID++;
         }

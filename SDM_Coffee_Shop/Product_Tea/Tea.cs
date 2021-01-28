@@ -1,6 +1,6 @@
 ﻿namespace SDM_Coffee_Shop
 {
-    internal class Tea : Beverage
+    internal abstract class Tea : Beverage
     {
         public int Theine { get; set; }
 
@@ -8,7 +8,7 @@
 
         public bool HasSugar { get; set; }
 
-        public Tea(int theine, bool hasMilk, bool hasSugar)
+        public Tea(int theine = 0, bool hasMilk = false, bool hasSugar = false)
         {
             Theine = theine;
             HasMilk = hasMilk;

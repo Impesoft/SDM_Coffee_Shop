@@ -9,7 +9,7 @@ namespace SDM_Coffee_Shop.Product_Milkshake
 {
     internal class Vanilla : Milkshake
     {
-        public Vanilla(bool hasDairy, bool hasWhippedCream)
+        public Vanilla(bool hasDairy = false, bool hasWhippedCream = false)
             : base(hasDairy, hasWhippedCream)
         {
             Name = "Vanilla Shake";

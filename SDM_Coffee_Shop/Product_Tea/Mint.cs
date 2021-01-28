@@ -17,7 +17,7 @@ namespace SDM_Coffee_Shop.Product_Tea
 
         public typeOfTea TypeOfTea { get; set; }
 
-        public Mint(int theine, bool hasMilk, bool hasSugar, typeOfTea typeOfTea)
+        public Mint(int theine = 0, bool hasMilk = false, bool hasSugar = false, typeOfTea typeOfTea = typeOfTea.peppermint)
           : base(theine, hasMilk, hasSugar)
         {
             TypeOfTea = typeOfTea;

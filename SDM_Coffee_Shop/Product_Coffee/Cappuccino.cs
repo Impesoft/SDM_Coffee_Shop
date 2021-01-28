@@ -9,7 +9,7 @@ namespace SDM_Coffee_Shop
 {
     internal class Cappuccino : Coffee
     {
-        public Cappuccino(int caffeine, bool hasMilk, bool hasSugar, string roast)
+        public Cappuccino(int caffeine = 0, bool hasMilk = false, bool hasSugar = false)
            : base(caffeine, hasMilk, hasSugar)
         {
             Name = "Cappuccino";

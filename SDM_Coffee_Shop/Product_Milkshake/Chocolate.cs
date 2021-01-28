@@ -18,7 +18,7 @@ namespace SDM_Coffee_Shop.Product_Milkshake
 
         public typeOfChocolate TypeOfChocolate { get; set; }
 
-        public Chocolate(bool hasDairy, bool hasWhippedCream, typeOfChocolate typeOfChocolate)
+        public Chocolate(bool hasDairy = false, bool hasWhippedCream = false, typeOfChocolate typeOfChocolate = typeOfChocolate.Milk)
             : base(hasDairy, hasWhippedCream)
         {
             TypeOfChocolate = typeOfChocolate;

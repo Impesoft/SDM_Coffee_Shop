@@ -11,7 +11,7 @@ namespace SDM_Coffee_Shop.Product_Milkshake
     {
         public bool IsFrozenFruit { get; set; }
 
-        public Strawberry(bool hasDairy, bool hasWhippedCream, bool isFrozenFruit)
+        public Strawberry(bool hasDairy = false, bool hasWhippedCream = false, bool isFrozenFruit = false)
             : base(hasDairy, hasWhippedCream)
         {
             IsFrozenFruit = isFrozenFruit;
