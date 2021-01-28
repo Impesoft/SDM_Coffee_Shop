@@ -11,11 +11,9 @@ namespace SDM_Coffee_Shop
         public bool HasDairy { get; set; }
         public bool HasWhippedCream { get; set; }
 
-        public Milkshake(bool hasDairy, bool hasWhippedCream)
-
+        public Milkshake()
         {
-            HasDairy = hasDairy;
-            HasWhippedCream = hasWhippedCream;
+           
         }
     }
 }

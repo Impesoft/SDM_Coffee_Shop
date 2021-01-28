@@ -38,11 +38,12 @@ namespace SDM_Coffee_Shop.UserControls
             // 
             // btnInfo
             // 
+            this.btnInfo.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.vanilla;
+            this.btnInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnInfo.Location = new System.Drawing.Point(21, 16);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(200, 200);
             this.btnInfo.TabIndex = 0;
-            this.btnInfo.Text = "button1";
             this.btnInfo.UseVisualStyleBackColor = true;
             // 
             // lblName
@@ -65,12 +66,13 @@ namespace SDM_Coffee_Shop.UserControls
             // 
             // btnAddToCart
             // 
+            this.btnAddToCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAddToCart.Location = new System.Drawing.Point(21, 301);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(200, 32);
             this.btnAddToCart.TabIndex = 3;
             this.btnAddToCart.Text = "Order!";
-            this.btnAddToCart.UseVisualStyleBackColor = true;
+            this.btnAddToCart.UseVisualStyleBackColor = false;
             // 
             // btnInfosmall
             // 
