@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace SDM_Coffee_Shop.UserControls
 {
     public partial class UserControl1 : UserControl
-    {
+    {        
         private ShoppingCart _cart;
         private IBeverageRepo _repo;
 
@@ -21,7 +21,7 @@ namespace SDM_Coffee_Shop.UserControls
             InitializeComponent();
             
             _cart = ShoppingCart.GetShoppingCart();
-            _repo = new BeverageRepo();
+            _repo = new BeverageRepo();            
         }   
         public int ID { get; set; }
 
@@ -54,7 +54,8 @@ namespace SDM_Coffee_Shop.UserControls
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
             var beverage = _repo.GetBeverage(ID);
-            _cart.AddBeverageToCart(beverage);
+            _cart.AddBeverageToCart(beverage);           
+            
         }        
     }
 }
