@@ -10,10 +10,10 @@ namespace SDM_Coffee_Shop
     internal class Americano : Coffee
     {
         public typeOfRoast TypeOfRoast { get; set; }
+
         public Americano()
-   
+
         {
-            TypeOfRoast = typeOfRoast;
             Name = "Americano";
             Price = 1.99;
             Image = "americano";
