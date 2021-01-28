@@ -8,7 +8,7 @@
 
         public bool HasSugar { get; set; }
 
-        public Tea(int theine = 0, bool hasMilk = false, bool hasSugar = false)
+        public Tea(int theine, bool hasMilk, bool hasSugar)
         {
             Theine = theine;
             HasMilk = hasMilk;

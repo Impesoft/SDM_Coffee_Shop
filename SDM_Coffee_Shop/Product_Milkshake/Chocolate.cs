@@ -9,13 +9,6 @@ namespace SDM_Coffee_Shop
 {
     internal class Chocolate : Milkshake
     {
-        public enum typeOfChocolate
-        {
-            White = 1,
-            Milk = 2,
-            Dark = 3,
-        };
-
         public typeOfChocolate TypeOfChocolate { get; set; }
 
         public Chocolate(bool hasDairy = false, bool hasWhippedCream = false, typeOfChocolate typeOfChocolate = typeOfChocolate.Milk)

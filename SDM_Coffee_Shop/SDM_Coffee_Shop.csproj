@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BeverageRepo.cs" />
     <Compile Include="Interfaces\IBeverageRepo.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="Product_Coffee\Americano.cs" />
     <Compile Include="Beverage.cs" />
     <Compile Include="Product_Coffee\Cappuccino.cs" />

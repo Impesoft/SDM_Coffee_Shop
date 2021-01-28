@@ -19,6 +19,5 @@ namespace SDM_Coffee_Shop
         string Name { get; set; }
 
         string ToString();
-       
     }
 }
