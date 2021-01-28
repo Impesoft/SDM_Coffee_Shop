@@ -12,4 +12,17 @@ namespace SDM_Coffee_Shop
         Milk = 2,
         Dark = 3,
     };
+
+    public enum typeOfTea
+    {
+        peppermint = 1,
+        spearmint = 2,
+    };
+
+    public enum typeOfRoast
+    {
+        Light = 1,
+        Medium = 2,
+        Dark = 3,
+    };
 }

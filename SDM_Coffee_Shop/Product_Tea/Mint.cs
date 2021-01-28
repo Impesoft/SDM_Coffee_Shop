@@ -9,12 +9,6 @@ namespace SDM_Coffee_Shop.Product_Tea
 {
     internal class Mint : Tea
     {
-        public enum typeOfTea
-        {
-            peppermint = 1,
-            spearmint = 2,
-        };
-
         public typeOfTea TypeOfTea { get; set; }
 
         public Mint(int theine = 0, bool hasMilk = false, bool hasSugar = false, typeOfTea typeOfTea = typeOfTea.peppermint)
