@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SDM_Coffee_Shop
 {
-    interface IBeverage
+    public interface IBeverage
     {
         double Price { get; set; }
 

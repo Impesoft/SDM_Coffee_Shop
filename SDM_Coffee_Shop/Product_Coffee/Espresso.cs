@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace SDM_Coffee_Shop.Product_Coffee
-{
+namespace SDM_Coffee_Shop
+{ 
     internal class Espresso : Coffee
     {
         public Espresso(int caffeine = 0, bool hasMilk = false, bool hasSugar = false)
