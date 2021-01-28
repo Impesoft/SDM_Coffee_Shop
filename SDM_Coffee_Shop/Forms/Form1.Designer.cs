@@ -62,7 +62,7 @@ namespace SDM_Coffee_Shop
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Size = new System.Drawing.Size(2172, 1717);
+            this.splitContainer1.Size = new System.Drawing.Size(2172, 1598);
             this.splitContainer1.SplitterDistance = 1596;
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1596, 1717);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1596, 1598);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // button1
@@ -89,7 +89,7 @@ namespace SDM_Coffee_Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2172, 1717);
+            this.ClientSize = new System.Drawing.Size(2172, 1598);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
             this.Name = "Form1";

@@ -19,7 +19,7 @@ namespace SDM_Coffee_Shop.UserControls
         public UserControl1()
         {
             InitializeComponent();
-            
+
             _cart = ShoppingCart.GetShoppingCart();
             _repo = new BeverageRepo();
         }
@@ -45,25 +45,24 @@ namespace SDM_Coffee_Shop.UserControls
                 if (value != null)
                 {
                     ResourceManager rm = Properties.Resources.ResourceManager;
-                    Bitmap myImage = (Bitmap)rm.GetObject(value);                    
-                                      
-                    btnInfo.BackgroundImage = myImage;                    
+                    Bitmap myImage = (Bitmap)rm.GetObject(value);
+
+                    btnInfo.BackgroundImage = myImage;
                 }
             }
         }
 
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
-            FormAbout form = new FormAbout();
+            IBeverage beverage = _repo.GetBeverage(ID);
+            Form form = new FormAbout(beverage);
             form.Show();
-            //form.imgAb
         }
 
-      
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
             var beverage = _repo.GetBeverage(ID);
             _cart.AddBeverageToCart(beverage);
-        }        
+        }
     }
 }

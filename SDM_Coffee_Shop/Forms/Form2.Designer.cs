@@ -29,71 +29,48 @@ namespace SDM_Coffee_Shop
         /// </summary>
         private void InitializeComponent()
         {
-            this.imgAbout = new System.Windows.Forms.Button();
-            this.lblAboutTitle = new System.Windows.Forms.Label();
             this.lblAboutDescription = new System.Windows.Forms.Label();
-            this.btnAboutBack = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgAbout
-            // 
-            this.imgAbout.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.wsour1;
-            this.imgAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imgAbout.Location = new System.Drawing.Point(13, 32);
-            this.imgAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.imgAbout.Name = "imgAbout";
-            this.imgAbout.Size = new System.Drawing.Size(300, 308);
-            this.imgAbout.TabIndex = 1;
-            this.imgAbout.UseVisualStyleBackColor = true;
-            // 
-            // lblAboutTitle
-            // 
-            this.lblAboutTitle.AutoSize = true;
-            this.lblAboutTitle.Location = new System.Drawing.Point(359, 44);
-            this.lblAboutTitle.Name = "lblAboutTitle";
-            this.lblAboutTitle.Size = new System.Drawing.Size(51, 20);
-            this.lblAboutTitle.TabIndex = 3;
-            this.lblAboutTitle.Text = "label1";
             // 
             // lblAboutDescription
             // 
             this.lblAboutDescription.AutoSize = true;
-            this.lblAboutDescription.Location = new System.Drawing.Point(361, 91);
+            this.lblAboutDescription.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAboutDescription.Location = new System.Drawing.Point(274, 12);
+            this.lblAboutDescription.MaximumSize = new System.Drawing.Size(700, 500);
             this.lblAboutDescription.Name = "lblAboutDescription";
-            this.lblAboutDescription.Size = new System.Drawing.Size(51, 20);
+            this.lblAboutDescription.Size = new System.Drawing.Size(78, 31);
             this.lblAboutDescription.TabIndex = 4;
             this.lblAboutDescription.Text = "label2";
             // 
-            // btnAboutBack
+            // pictureBox1
             // 
-            this.btnAboutBack.Location = new System.Drawing.Point(711, 303);
-            this.btnAboutBack.Name = "btnAboutBack";
-            this.btnAboutBack.Size = new System.Drawing.Size(144, 37);
-            this.btnAboutBack.TabIndex = 5;
-            this.btnAboutBack.Text = "Back";
-            this.btnAboutBack.UseVisualStyleBackColor = true;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 352);
-            this.Controls.Add(this.btnAboutBack);
+            this.ClientSize = new System.Drawing.Size(1010, 280);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAboutDescription);
-            this.Controls.Add(this.lblAboutTitle);
-            this.Controls.Add(this.imgAbout);
             this.Name = "FormAbout";
             this.Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button imgAbout;
-        private System.Windows.Forms.Label lblAboutTitle;
         private System.Windows.Forms.Label lblAboutDescription;
-        private System.Windows.Forms.Button btnAboutBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
