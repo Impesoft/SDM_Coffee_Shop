@@ -8,6 +8,8 @@ namespace SDM_Coffee_Shop
 {
     internal class BeverageRepo : IBeverageRepo
     {
+        private static List<IBeverage> _listOfProducts = null;
+
         public IBeverage GetBeverage(int id)
         {
             List<IBeverage> allBeverages = GetBeverages();
@@ -18,7 +20,7 @@ namespace SDM_Coffee_Shop
             return selectedBeverage;
         }
 
-        public List<IBeverage> GetBeverages()
+        public List<IBeverage> GenerateBeverages()
         {
             var beverages = new List<IBeverage>
             {
@@ -40,6 +42,16 @@ namespace SDM_Coffee_Shop
             };
 
             return beverages;
+        }
+
+        public List<IBeverage> GetBeverages()
+        {
+            if (_listOfProducts == null)
+            {
+                _listOfProducts = GenerateBeverages();
+            }
+
+            return _listOfProducts;
         }
     }
 }

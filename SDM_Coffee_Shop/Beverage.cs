@@ -12,8 +12,8 @@
 
         public string Description { get; set; }
 
+        private static int PID = 1;
         public int ID { get; set; }
-        private int PID = 1;
 
         public string Image { get; set; }
 

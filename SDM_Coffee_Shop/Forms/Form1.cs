@@ -27,9 +27,10 @@ namespace SDM_Coffee_Shop
                 UserControl1 myUserControl = new UserControl1
                 {
                     ID = beverage.ID,
+
                     MyProductName = beverage.Name,
                     Price = beverage.Price.ToString(),
-                    
+
                     Image = beverage.Image
                 };                
 
