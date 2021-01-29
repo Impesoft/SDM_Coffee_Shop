@@ -18,7 +18,6 @@ namespace SDM_Coffee_Shop
             var beverages = beverageRepo.GetBeverages();
             _cart = ShoppingCart.GetShoppingCart();
             GenerateControlsForBeverages(beverages);
-            
         }
 
         private void GenerateControlsForBeverages(IEnumerable<IBeverage> beverages)
@@ -43,18 +42,17 @@ namespace SDM_Coffee_Shop
         private void GenerateShoppingCartList(IBeverage beverage)
         {
             int i = 1;
-            
-                CartControl myUserControl = new CartControl
-                {
-                    Name = $"CartControl{i}",
-                    ID = beverage.ID,
-                    MyProductName = beverage.Name,
-                    Price = beverage.Price.ToString()
-                };
-                myUserControl.RemoveFromCartButtonClicked += RemoveFromCartClickedInCartControl;
-                i++;
-                flowLayoutPanel2.Controls.Add(myUserControl);
-            
+
+            CartControl myUserControl = new CartControl
+            {
+                Name = $"CartControl{i}",
+                ID = beverage.ID,
+                MyProductName = beverage.Name,
+                Price = beverage.Price.ToString()
+            };
+            myUserControl.RemoveFromCartButtonClicked += RemoveFromCartClickedInCartControl;
+            i++;
+            flowLayoutPanel2.Controls.Add(myUserControl);
         }
 
         private void btnClearCart_Click(object sender, System.EventArgs e)
@@ -70,7 +68,7 @@ namespace SDM_Coffee_Shop
 
             var beverage = beverageRepo.GetBeverage(userControl.ID);
             _cart.AddBeverageToCart(beverage);
-            
+
             GenerateShoppingCartList(beverage);
             lblPrice.Text = _cart.CalculatePrice().ToString();
         }
@@ -79,10 +77,9 @@ namespace SDM_Coffee_Shop
         {
             var userControl = sender as CartControl;
             _cart.RemoveBeverageFromCart(_cart.GetBeverageInCart(userControl.ID));
-                        
+
             flowLayoutPanel2.Controls.Remove(userControl);
             lblPrice.Text = _cart.CalculatePrice().ToString();
         }
-
     }
 }

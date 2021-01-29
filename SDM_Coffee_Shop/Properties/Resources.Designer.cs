@@ -163,6 +163,16 @@ namespace SDM_Coffee_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Overlay {
+            get {
+                object obj = ResourceManager.GetObject("Overlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pina {
             get {
                 object obj = ResourceManager.GetObject("pina", resourceCulture);
