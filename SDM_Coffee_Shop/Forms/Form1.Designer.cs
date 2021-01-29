@@ -74,8 +74,8 @@ namespace SDM_Coffee_Shop
             this.splitContainer1.Panel2.Controls.Add(this.btnConfirmOrder);
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.splitContainer1.Panel2MinSize = 300;
-            this.splitContainer1.Size = new System.Drawing.Size(2178, 1410);
-            this.splitContainer1.SplitterDistance = 1709;
+            this.splitContainer1.Size = new System.Drawing.Size(2287, 1698);
+            this.splitContainer1.SplitterDistance = 1795;
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -90,7 +90,7 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(50);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1709, 1410);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1795, 1698);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // label1
@@ -148,7 +148,7 @@ namespace SDM_Coffee_Shop
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(2178, 1410);
+            this.ClientSize = new System.Drawing.Size(1906, 1415);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

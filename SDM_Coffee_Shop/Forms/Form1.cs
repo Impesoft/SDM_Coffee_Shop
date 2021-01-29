@@ -25,12 +25,12 @@ namespace SDM_Coffee_Shop
             int i = 1;
             foreach (IBeverage beverage in beverages)
             {
-                GridControl myUserControl = new GridControl
+                var myUserControl = new GridControl
                 {
                     Name = $"GridControl{i}",
                     ID = beverage.ID,
                     MyProductName = beverage.Name,
-                    Price = beverage.Price.ToString(),
+                    Price = "€ " + beverage.Price.ToString(),
                     Image = beverage.Image
                 };
                 i++;
