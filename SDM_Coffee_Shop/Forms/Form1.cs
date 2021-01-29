@@ -40,12 +40,10 @@ namespace SDM_Coffee_Shop
             }
         }
 
-        private void GenerateShoppingCartList(IEnumerable<IBeverage> beverages)
+        private void GenerateShoppingCartList(IBeverage beverage)
         {
             int i = 1;
-            foreach (IBeverage beverage in beverages)
-            {
-                
+            
                 CartControl myUserControl = new CartControl
                 {
                     Name = $"CartControl{i}",
@@ -56,7 +54,7 @@ namespace SDM_Coffee_Shop
                 myUserControl.RemoveFromCartButtonClicked += RemoveFromCartClickedInCartControl;
                 i++;
                 flowLayoutPanel2.Controls.Add(myUserControl);
-            }
+            
         }
 
         private void btnClearCart_Click(object sender, System.EventArgs e)
@@ -72,9 +70,8 @@ namespace SDM_Coffee_Shop
 
             var beverage = beverageRepo.GetBeverage(userControl.ID);
             _cart.AddBeverageToCart(beverage);
-            flowLayoutPanel2.Controls.Clear();
-
-            GenerateShoppingCartList(_cart.GetBeveragesInCart());
+            
+            GenerateShoppingCartList(beverage);
             lblPrice.Text = _cart.CalculatePrice().ToString();
         }
 
