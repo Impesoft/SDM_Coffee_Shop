@@ -30,6 +30,7 @@ namespace SDM_Coffee_Shop
         private void InitializeComponent()
         {
             this.lblAboutDescription = new System.Windows.Forms.Label();
+            this.OrderButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +46,16 @@ namespace SDM_Coffee_Shop
             this.lblAboutDescription.TabIndex = 4;
             this.lblAboutDescription.Text = "label2";
             // 
+            // OrderButton
+            // 
+            this.OrderButton.Location = new System.Drawing.Point(814, 12);
+            this.OrderButton.Name = "OrderButton";
+            this.OrderButton.Size = new System.Drawing.Size(207, 60);
+            this.OrderButton.TabIndex = 7;
+            this.OrderButton.Text = "Place your order!";
+            this.OrderButton.UseVisualStyleBackColor = true;
+            this.OrderButton.Click += new System.EventHandler(this.btnAboutBack_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
@@ -59,6 +70,7 @@ namespace SDM_Coffee_Shop
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 604);
+            this.Controls.Add(this.OrderButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAboutDescription);
             this.Name = "FormAbout";
@@ -72,5 +84,6 @@ namespace SDM_Coffee_Shop
         #endregion
         private System.Windows.Forms.Label lblAboutDescription;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button OrderButton;
     }
 }

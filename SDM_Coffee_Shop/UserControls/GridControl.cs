@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace SDM_Coffee_Shop.UserControls
 {
     public partial class GridControl : UserControl
-    {        
+    {
         private ShoppingCart _cart;
         private IBeverageRepo _repo;
 
@@ -21,8 +21,9 @@ namespace SDM_Coffee_Shop.UserControls
             InitializeComponent();
 
             _cart = ShoppingCart.GetShoppingCart();
-            _repo = new BeverageRepo();            
-        }   
+            _repo = new BeverageRepo();
+        }
+
         public int ID { get; set; }
 
         public string MyProductName
@@ -46,7 +47,7 @@ namespace SDM_Coffee_Shop.UserControls
                     ResourceManager rm = Properties.Resources.ResourceManager;
                     Bitmap myImage = (Bitmap)rm.GetObject(value);
 
-                    btnInfo.BackgroundImage = myImage;
+                    PBGrid.BackgroundImage = myImage;
                 }
             }
         }
@@ -56,20 +57,46 @@ namespace SDM_Coffee_Shop.UserControls
         {
             IBeverage beverage = _repo.GetBeverage(ID);
             Form form = new FormAbout(beverage);
+
             form.Show();
         }
 
-
         //ADD EVENT HANDLER
         public event EventHandler AddToCartButtonClicked;
+
         protected virtual void OnAddToCartButtonClicked(EventArgs e)
         {
             AddToCartButtonClicked?.Invoke(this, e);
         }
+
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            OnAddToCartButtonClicked(e);         
-            
-        }        
+            OnAddToCartButtonClicked(e);
+        }
+
+        private void btnInfo_MouseHover(object sender, EventArgs e)
+        {
+            ResourceManager rm = Properties.Resources.ResourceManager;
+            Bitmap myImage = (Bitmap)rm.GetObject("Overlay");
+            PBGrid.Image = myImage;
+        }
+
+        private void buttonHoover_MouseLeave(object sender, EventArgs e)
+        {
+            PBGrid.Image = null;
+        }
+
+        private void PBGrid_MouseEnter(object sender, EventArgs e)
+        {
+            ResourceManager rm = Properties.Resources.ResourceManager;
+            Bitmap myImage = (Bitmap)rm.GetObject("Overlay");
+            PBGrid.Image = myImage;
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void PBGrid_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Arrow;
+        }
     }
 }
