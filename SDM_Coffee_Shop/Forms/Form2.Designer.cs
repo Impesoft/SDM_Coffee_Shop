@@ -38,7 +38,7 @@ namespace SDM_Coffee_Shop
             // 
             this.lblAboutDescription.AutoSize = true;
             this.lblAboutDescription.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAboutDescription.Location = new System.Drawing.Point(274, 12);
+            this.lblAboutDescription.Location = new System.Drawing.Point(12, 349);
             this.lblAboutDescription.MaximumSize = new System.Drawing.Size(700, 500);
             this.lblAboutDescription.Name = "lblAboutDescription";
             this.lblAboutDescription.Size = new System.Drawing.Size(78, 31);
@@ -58,7 +58,7 @@ namespace SDM_Coffee_Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 280);
+            this.ClientSize = new System.Drawing.Size(1033, 604);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAboutDescription);
             this.Name = "FormAbout";

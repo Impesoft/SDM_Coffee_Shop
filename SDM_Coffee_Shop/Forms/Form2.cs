@@ -23,7 +23,16 @@ namespace SDM_Coffee_Shop
             Bitmap myImage = (Bitmap)rm.GetObject(beverage.Image);
 
             pictureBox1.Image = myImage;
+            int i = 40;
 
+            foreach (var control in beverage.CreateControls())
+            {
+                control.Location = new Point(220, i);
+
+                Controls.Add(control);
+
+                i += 25;
+            }
             // pictureBox1.Image = Directory.GetParent(Properties.Resources.deca).FullName + "IMG\\deca.jpg";
             //Image = ;
 
