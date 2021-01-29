@@ -35,9 +35,7 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClearCart = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnClearCart = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();  
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -124,23 +122,7 @@ namespace SDM_Coffee_Shop
             this.button1.Text = "Bereken Prijs";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnClearCart
-            // 
-            this.btnClearCart.Location = new System.Drawing.Point(208, 24);
-            this.btnClearCart.Name = "btnClearCart";
-            this.btnClearCart.Size = new System.Drawing.Size(136, 53);
-            this.btnClearCart.TabIndex = 2;
-            this.btnClearCart.Text = "Maak Leeg";
-            this.btnClearCart.UseVisualStyleBackColor = true;
-            this.btnClearCart.Click += new System.EventHandler(this.btnClearCart_Click);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(27, 137);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(321, 849);
-            this.flowLayoutPanel2.TabIndex = 3;
+            
             // 
             // Form1
             // 
