@@ -89,8 +89,9 @@ namespace SDM_Coffee_Shop.UserControls
             this.btnInfo.Size = new System.Drawing.Size(300, 308);
             this.btnInfo.TabIndex = 0;
             this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfosmall_Click);
             // 
-            // UserControl1
+            // GridControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +101,7 @@ namespace SDM_Coffee_Shop.UserControls
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.btnInfo);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "UserControl1";
+            this.Name = "GridControl";
             this.Size = new System.Drawing.Size(366, 551);
             this.ResumeLayout(false);
             this.PerformLayout();

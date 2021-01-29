@@ -25,4 +25,11 @@ namespace SDM_Coffee_Shop
         Medium = 2,
         Dark = 3,
     };
+
+    public enum typeOfCaffeine
+    {
+        Mild = 1,
+        Medium = 2,
+        Strong = 3,
+    };
 }
