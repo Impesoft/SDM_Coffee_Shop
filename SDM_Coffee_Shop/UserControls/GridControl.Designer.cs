@@ -1,7 +1,7 @@
 ﻿
 namespace SDM_Coffee_Shop.UserControls
 {
-    partial class UserControl1
+    partial class GridControl
     {
         /// <summary> 
         /// Required designer variable.

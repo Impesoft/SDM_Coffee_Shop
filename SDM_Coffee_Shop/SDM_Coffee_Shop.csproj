@@ -86,11 +86,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Product_Tea\Tea.cs" />
     <Compile Include="ShoppingCart.cs" />
-    <Compile Include="UserControls\UserControl1.cs">
+    <Compile Include="UserControls\GridControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="UserControls\GridControl.Designer.cs">
+      <DependentUpon>GridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CartControl.Designer.cs">
+      <DependentUpon>CartControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -108,8 +114,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\GridControl.resx">
+      <DependentUpon>GridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CartControl.resx">
+      <DependentUpon>CartControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">

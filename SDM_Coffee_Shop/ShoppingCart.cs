@@ -48,6 +48,22 @@ namespace SDM_Coffee_Shop
             return _beverages;
         }
 
+        public IBeverage GetBeverageInCart(int id)
+        {            
+            foreach (var drink in _beverages)
+            {
+                if (drink.ID == id)
+                {
+                    return drink;
+                }
+            }
+            return null;
+        }
+        public void RemoveBeverageFromCart(IBeverage beverageToRemove)
+        {
+            _beverages.Remove(beverageToRemove);
+        }
+
         public void ClearCart()
         {
             _beverages.Clear();
