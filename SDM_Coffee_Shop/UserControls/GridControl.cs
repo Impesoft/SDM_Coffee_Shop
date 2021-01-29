@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop.UserControls
 {
-    public partial class UserControl1 : UserControl
+    public partial class GridControl : UserControl
     {        
         private ShoppingCart _cart;
         private IBeverageRepo _repo;
 
-        public UserControl1()
+        public GridControl()
         {
             InitializeComponent();
 
@@ -51,6 +51,7 @@ namespace SDM_Coffee_Shop.UserControls
             }
         }
 
+        //ADD EVENT HANDLER
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
             IBeverage beverage = _repo.GetBeverage(ID);
@@ -58,10 +59,16 @@ namespace SDM_Coffee_Shop.UserControls
             form.Show();
         }
 
+
+        //ADD EVENT HANDLER
+        public event EventHandler AddToCartButtonClicked;
+        protected virtual void OnAddToCartButtonClicked(EventArgs e)
+        {
+            AddToCartButtonClicked?.Invoke(this, e);
+        }
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            var beverage = _repo.GetBeverage(ID);
-            _cart.AddBeverageToCart(beverage);           
+            OnAddToCartButtonClicked(e);         
             
         }        
     }
