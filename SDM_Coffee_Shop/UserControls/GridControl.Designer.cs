@@ -83,8 +83,8 @@ namespace SDM_Coffee_Shop.UserControls
             this.PBGrid.TabIndex = 5;
             this.PBGrid.TabStop = false;
             this.PBGrid.Click += new System.EventHandler(this.btnInfosmall_Click);
-            this.PBGrid.MouseLeave += new System.EventHandler(this.buttonHoover_MouseLeave);
-            this.PBGrid.MouseHover += new System.EventHandler(this.btnInfo_MouseHover);
+            this.PBGrid.MouseEnter += new System.EventHandler(this.PBGrid_MouseEnter);
+            this.PBGrid.MouseLeave += new System.EventHandler(this.PBGrid_MouseLeave);
             // 
             // GridControl
             // 
@@ -98,6 +98,8 @@ namespace SDM_Coffee_Shop.UserControls
             this.Margin = new System.Windows.Forms.Padding(20);
             this.Name = "GridControl";
             this.Size = new System.Drawing.Size(357, 356);
+            this.MouseEnter += new System.EventHandler(this.btnInfo_MouseHover);
+            this.MouseLeave += new System.EventHandler(this.buttonHoover_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.PBGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

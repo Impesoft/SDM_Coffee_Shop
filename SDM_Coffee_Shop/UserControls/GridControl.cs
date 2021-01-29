@@ -79,13 +79,23 @@ namespace SDM_Coffee_Shop.UserControls
             ResourceManager rm = Properties.Resources.ResourceManager;
             Bitmap myImage = (Bitmap)rm.GetObject("Overlay");
             PBGrid.Image = myImage;
-
-            this.Cursor = Cursors.Hand;
         }
 
         private void buttonHoover_MouseLeave(object sender, EventArgs e)
         {
             PBGrid.Image = null;
+        }
+
+        private void PBGrid_MouseEnter(object sender, EventArgs e)
+        {
+            ResourceManager rm = Properties.Resources.ResourceManager;
+            Bitmap myImage = (Bitmap)rm.GetObject("Overlay");
+            PBGrid.Image = myImage;
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void PBGrid_MouseLeave(object sender, EventArgs e)
+        {
             this.Cursor = Cursors.Arrow;
         }
     }
