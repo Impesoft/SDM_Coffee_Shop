@@ -36,6 +36,8 @@ namespace SDM_Coffee_Shop
             this.btnClearCart = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnClearCart = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -64,6 +66,9 @@ namespace SDM_Coffee_Shop
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.flowLayoutPanel2);
+            this.splitContainer1.Panel2.Controls.Add(this.btnClearCart);
+            this.splitContainer1.Panel2.Controls.Add(this.lblPrice);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Size = new System.Drawing.Size(1409, 924);
             this.splitContainer1.SplitterDistance = 1081;
@@ -116,9 +121,26 @@ namespace SDM_Coffee_Shop
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 52);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Nieuwe DriesKnop";
+            this.button1.Text = "Bereken Prijs";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnClearCart
+            // 
+            this.btnClearCart.Location = new System.Drawing.Point(208, 24);
+            this.btnClearCart.Name = "btnClearCart";
+            this.btnClearCart.Size = new System.Drawing.Size(136, 53);
+            this.btnClearCart.TabIndex = 2;
+            this.btnClearCart.Text = "Maak Leeg";
+            this.btnClearCart.UseVisualStyleBackColor = true;
+            this.btnClearCart.Click += new System.EventHandler(this.btnClearCart_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(27, 137);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(321, 849);
+            this.flowLayoutPanel2.TabIndex = 3;
             // 
             // Form1
             // 
@@ -132,6 +154,7 @@ namespace SDM_Coffee_Shop
             this.Text = "SDM Coffee Shop ";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -145,6 +168,9 @@ namespace SDM_Coffee_Shop
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Button btnClearCart;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 
