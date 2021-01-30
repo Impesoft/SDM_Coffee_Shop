@@ -28,7 +28,7 @@ namespace SDM_Coffee_Shop
             foreach (var control in beverage.CreateControls())
             {
                 control.Location = new Point(220, i);
-
+                
                 Controls.Add(control);
 
                 i += 25;

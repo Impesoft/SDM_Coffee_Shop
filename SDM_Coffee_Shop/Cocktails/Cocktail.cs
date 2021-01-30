@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    internal class Cocktail : Beverage
+    public abstract class Cocktail : Beverage
     {
         public bool HasIce { get; set; }
 
@@ -22,10 +22,26 @@ namespace SDM_Coffee_Shop
         {
             List<Control> TempList = new List<Control>();
             CheckBox CHasIce = new CheckBox();
-            CHasIce.Text = "Ice";
+            CHasIce.Text = "With Ice";
             CHasIce.Name = "CHasIce";
             CHasIce.CheckedChanged += new System.EventHandler(this.SetControls);
+            CHasIce.BackColor = System.Drawing.Color.Transparent;
+            CHasIce.ForeColor = System.Drawing.Color.White;
             TempList.Add(CHasIce);
+
+            Label LBLPercentageAlcohol = new Label();
+            LBLPercentageAlcohol.Text = "Choose your alcohos percentage: ";
+            LBLPercentageAlcohol.Width = 200;
+            LBLPercentageAlcohol.BackColor = System.Drawing.Color.Transparent;
+            LBLPercentageAlcohol.ForeColor = System.Drawing.Color.White;
+
+            TempList.Add(LBLPercentageAlcohol);
+            TrackBar CPercentageAlcohol = new TrackBar();
+            CPercentageAlcohol.Name = "CPercentageAlcohol";
+            CPercentageAlcohol.Width = 200;
+            CPercentageAlcohol.BackColor = System.Drawing.Color.WhiteSmoke;
+            CPercentageAlcohol.ValueChanged += new System.EventHandler(this.SetControls);
+            TempList.Add(CPercentageAlcohol);
 
             //ToAdd= PercentageAlcohol
 
@@ -42,7 +58,7 @@ namespace SDM_Coffee_Shop
                     break;
 
                 case "CPercentageAlcohol": //TOADD
-
+                    PercentageAlcohol = ((TrackBar)x).Value;
                     break;
             }
         }
