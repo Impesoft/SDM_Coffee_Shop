@@ -203,5 +203,14 @@
   <ItemGroup>
     <None Include="Resources\Overlay-blanc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1579818.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Background_Vector_RON_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnggg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

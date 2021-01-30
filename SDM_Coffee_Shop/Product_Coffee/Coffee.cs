@@ -48,7 +48,7 @@ namespace SDM_Coffee_Shop
             return test;
         }
 
-        public virtual void SetControls(object sender, EventArgs e)
+        public override void SetControls(object sender, EventArgs e)
         {
             var x = sender as Control;
             switch (x.Name)
