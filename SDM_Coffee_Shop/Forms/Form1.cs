@@ -25,7 +25,7 @@ namespace SDM_Coffee_Shop
             int i = 1;
             foreach (IBeverage beverage in beverages)
             {
-                var myUserControl = new GridControl
+                GridControl myUserControl = new GridControl
                 {
                     Name = $"GridControl{i}",
                     ID = beverage.ID,

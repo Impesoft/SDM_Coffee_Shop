@@ -188,5 +188,11 @@
   <ItemGroup>
     <None Include="Resources\Overlay.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1bb99f9b0796e8c95b7fd5d3f9950821.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_Light.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

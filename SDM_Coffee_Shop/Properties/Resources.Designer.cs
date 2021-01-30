@@ -63,9 +63,29 @@ namespace SDM_Coffee_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1bb99f9b0796e8c95b7fd5d3f9950821 {
+            get {
+                object obj = ResourceManager.GetObject("1bb99f9b0796e8c95b7fd5d3f9950821", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap americano {
             get {
                 object obj = ResourceManager.GetObject("americano", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_Light {
+            get {
+                object obj = ResourceManager.GetObject("Background_Light", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

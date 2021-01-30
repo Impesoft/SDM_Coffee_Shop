@@ -38,19 +38,22 @@ namespace SDM_Coffee_Shop
             // lblAboutDescription
             // 
             this.lblAboutDescription.AutoSize = true;
+            this.lblAboutDescription.BackColor = System.Drawing.Color.Transparent;
             this.lblAboutDescription.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAboutDescription.Location = new System.Drawing.Point(12, 349);
-            this.lblAboutDescription.MaximumSize = new System.Drawing.Size(700, 500);
+            this.lblAboutDescription.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblAboutDescription.Location = new System.Drawing.Point(12, 247);
+            this.lblAboutDescription.MaximumSize = new System.Drawing.Size(622, 400);
             this.lblAboutDescription.Name = "lblAboutDescription";
-            this.lblAboutDescription.Size = new System.Drawing.Size(78, 31);
+            this.lblAboutDescription.Size = new System.Drawing.Size(65, 27);
             this.lblAboutDescription.TabIndex = 4;
             this.lblAboutDescription.Text = "label2";
             // 
             // OrderButton
             // 
-            this.OrderButton.Location = new System.Drawing.Point(814, 12);
+            this.OrderButton.Location = new System.Drawing.Point(724, 10);
+            this.OrderButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OrderButton.Name = "OrderButton";
-            this.OrderButton.Size = new System.Drawing.Size(207, 60);
+            this.OrderButton.Size = new System.Drawing.Size(184, 48);
             this.OrderButton.TabIndex = 7;
             this.OrderButton.Text = "Place your order!";
             this.OrderButton.UseVisualStyleBackColor = true;
@@ -58,21 +61,24 @@ namespace SDM_Coffee_Shop
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.Size = new System.Drawing.Size(228, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // FormAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 604);
+            this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources._1bb99f9b0796e8c95b7fd5d3f9950821;
+            this.ClientSize = new System.Drawing.Size(918, 483);
             this.Controls.Add(this.OrderButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAboutDescription);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAbout";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
