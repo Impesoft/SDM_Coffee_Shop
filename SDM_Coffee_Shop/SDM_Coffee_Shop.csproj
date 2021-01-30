@@ -194,5 +194,14 @@
   <ItemGroup>
     <None Include="Resources\Background_Light.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_Dark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overlay-blanc.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

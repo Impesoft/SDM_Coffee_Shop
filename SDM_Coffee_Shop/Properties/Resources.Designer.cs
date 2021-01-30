@@ -83,6 +83,26 @@ namespace SDM_Coffee_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background {
+            get {
+                object obj = ResourceManager.GetObject("Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_Dark {
+            get {
+                object obj = ResourceManager.GetObject("Background_Dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background_Light {
             get {
                 object obj = ResourceManager.GetObject("Background_Light", resourceCulture);
@@ -186,6 +206,16 @@ namespace SDM_Coffee_Shop.Properties {
         internal static System.Drawing.Bitmap Overlay {
             get {
                 object obj = ResourceManager.GetObject("Overlay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Overlay_blanc {
+            get {
+                object obj = ResourceManager.GetObject("Overlay-blanc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

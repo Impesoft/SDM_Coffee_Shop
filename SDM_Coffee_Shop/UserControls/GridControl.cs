@@ -88,7 +88,7 @@ namespace SDM_Coffee_Shop.UserControls
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.DarkGray, ButtonBorderStyle.Outset);
+            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.LightGray, ButtonBorderStyle.None);
         }
     }
 }

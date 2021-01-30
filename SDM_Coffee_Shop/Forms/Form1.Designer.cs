@@ -29,7 +29,6 @@ namespace SDM_Coffee_Shop
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblCoffee = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -151,7 +150,7 @@ namespace SDM_Coffee_Shop
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.Background_Dark;
             this.ClientSize = new System.Drawing.Size(1932, 883);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
