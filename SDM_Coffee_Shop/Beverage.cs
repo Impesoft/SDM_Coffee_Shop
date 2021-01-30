@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
@@ -37,6 +38,10 @@ namespace SDM_Coffee_Shop
         public virtual List<Control> CreateControls()
         {
             return null;
+        }
+
+        public virtual void SetControls(object sender, EventArgs e)
+        {
         }
     }
 }

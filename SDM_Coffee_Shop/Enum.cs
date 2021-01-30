@@ -8,28 +8,28 @@ namespace SDM_Coffee_Shop
 {
     public enum typeOfChocolate
     {
-        White = 1,
-        Milk = 2,
-        Dark = 3,
+        White = 0,
+        Milk = 1,
+        Dark = 2,
     };
 
     public enum typeOfTea
     {
-        peppermint = 1,
-        spearmint = 2,
+        peppermint = 0,
+        spearmint = 1,
     };
 
     public enum typeOfRoast
     {
-        Light = 1,
-        Medium = 2,
-        Dark = 3,
+        Light = 0,
+        Medium = 1,
+        Dark = 2,
     };
 
     public enum typeOfCaffeine
     {
-        Mild = 1,
-        Medium = 2,
-        Strong = 3,
+        Mild = 0,
+        Medium = 1,
+        Strong = 2,
     };
 }
