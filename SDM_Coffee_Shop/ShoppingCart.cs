@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SDM_Coffee_Shop
 {
-    class ShoppingCart : IShoppingCart
+    internal class ShoppingCart : IShoppingCart
     {
         private List<IBeverage> _beverages;
 
@@ -49,7 +49,7 @@ namespace SDM_Coffee_Shop
         }
 
         public IBeverage GetBeverageInCart(int id)
-        {            
+        {
             foreach (var drink in _beverages)
             {
                 if (drink.ID == id)
@@ -59,6 +59,7 @@ namespace SDM_Coffee_Shop
             }
             return null;
         }
+
         public void RemoveBeverageFromCart(IBeverage beverageToRemove)
         {
             _beverages.Remove(beverageToRemove);

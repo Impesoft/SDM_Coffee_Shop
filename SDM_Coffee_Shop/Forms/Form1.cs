@@ -30,7 +30,7 @@ namespace SDM_Coffee_Shop
                     Name = $"GridControl{i}",
                     ID = beverage.ID,
                     MyProductName = beverage.Name,
-                    Price = beverage.Price.ToString(),
+                    Price = "€ " + beverage.Price.ToString(),
                     Image = beverage.Image
                 };
                 i++;

@@ -39,66 +39,72 @@ namespace SDM_Coffee_Shop.UserControls
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 16F);
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblName.Location = new System.Drawing.Point(44, 296);
+            this.lblName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblName.Location = new System.Drawing.Point(22, -4);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(77, 36);
+            this.lblName.Size = new System.Drawing.Size(74, 34);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 12F);
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblPrice.Location = new System.Drawing.Point(237, 296);
+            this.lblPrice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblPrice.Location = new System.Drawing.Point(180, 235);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(69, 36);
+            this.lblPrice.Size = new System.Drawing.Size(51, 25);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "price";
-            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnAddToCart
             // 
             this.btnAddToCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAddToCart.Location = new System.Drawing.Point(119, 331);
-            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddToCart.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAddToCart.Location = new System.Drawing.Point(0, 0);
+            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(119, 25);
+            this.btnAddToCart.Size = new System.Drawing.Size(31, 21);
             this.btnAddToCart.TabIndex = 3;
             this.btnAddToCart.Text = "Order!";
             this.btnAddToCart.UseVisualStyleBackColor = false;
+            this.btnAddToCart.Visible = false;
             this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // PBGrid
             // 
             this.PBGrid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PBGrid.Location = new System.Drawing.Point(50, 37);
+            this.PBGrid.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PBGrid.Location = new System.Drawing.Point(26, 26);
             this.PBGrid.Name = "PBGrid";
-            this.PBGrid.Size = new System.Drawing.Size(256, 256);
+            this.PBGrid.Size = new System.Drawing.Size(210, 210);
             this.PBGrid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PBGrid.TabIndex = 5;
+            this.PBGrid.TabIndex = 4;
             this.PBGrid.TabStop = false;
             this.PBGrid.Click += new System.EventHandler(this.btnInfosmall_Click);
             this.PBGrid.MouseEnter += new System.EventHandler(this.PBGrid_MouseEnter);
-            this.PBGrid.MouseLeave += new System.EventHandler(this.PBGrid_MouseLeave);
+            this.PBGrid.MouseLeave += new System.EventHandler(this.buttonHoover_MouseLeave);
             // 
             // GridControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.Background_Light;
             this.Controls.Add(this.PBGrid);
             this.Controls.Add(this.btnAddToCart);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblName);
-            this.Margin = new System.Windows.Forms.Padding(20);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "GridControl";
-            this.Size = new System.Drawing.Size(357, 356);
-            this.MouseEnter += new System.EventHandler(this.btnInfo_MouseHover);
+            this.Padding = new System.Windows.Forms.Padding(4);
+            this.Size = new System.Drawing.Size(262, 262);
             this.MouseLeave += new System.EventHandler(this.buttonHoover_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.PBGrid)).EndInit();
             this.ResumeLayout(false);

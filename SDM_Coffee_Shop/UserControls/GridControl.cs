@@ -74,13 +74,6 @@ namespace SDM_Coffee_Shop.UserControls
             OnAddToCartButtonClicked(e);
         }
 
-        private void btnInfo_MouseHover(object sender, EventArgs e)
-        {
-            ResourceManager rm = Properties.Resources.ResourceManager;
-            Bitmap myImage = (Bitmap)rm.GetObject("Overlay");
-            PBGrid.Image = myImage;
-        }
-
         private void buttonHoover_MouseLeave(object sender, EventArgs e)
         {
             PBGrid.Image = null;
@@ -91,12 +84,11 @@ namespace SDM_Coffee_Shop.UserControls
             ResourceManager rm = Properties.Resources.ResourceManager;
             Bitmap myImage = (Bitmap)rm.GetObject("Overlay");
             PBGrid.Image = myImage;
-            this.Cursor = Cursors.Hand;
         }
 
-        private void PBGrid_MouseLeave(object sender, EventArgs e)
+        protected override void OnPaint(PaintEventArgs e)
         {
-            this.Cursor = Cursors.Arrow;
+            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, Color.DarkGray, ButtonBorderStyle.Outset);
         }
     }
 }

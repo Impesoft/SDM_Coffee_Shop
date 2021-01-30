@@ -116,8 +116,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\GridControl.aa.resx">
+      <DependentUpon>GridControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GridControl.resx">
       <DependentUpon>GridControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CartControl.resx">
       <DependentUpon>CartControl.cs</DependentUpon>
@@ -183,6 +187,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1bb99f9b0796e8c95b7fd5d3f9950821.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_Light.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

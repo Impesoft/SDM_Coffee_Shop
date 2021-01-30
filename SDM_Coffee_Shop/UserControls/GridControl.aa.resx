@@ -118,70 +118,44 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 19</value>
   </data>
-  <data name="wsour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wsour.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 30</value>
   </data>
-  <data name="Overlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Overlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblPrice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="pina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 197</value>
   </data>
-  <data name="deca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lblPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 30</value>
   </data>
-  <data name="wsour1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wsour.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnAddToCart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="WhiteRussian" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhiteRussian.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnAddToCart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="americano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\americano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnAddToCart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 21</value>
   </data>
-  <data name="vanilla1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vanilla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
   </data>
-  <data name="espresso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\espresso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>13, 12, 13, 12</value>
   </data>
-  <data name="chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="mint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mint.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WhiteRussian1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhiteRussian.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pina1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vanilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vanilla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1bb99f9b0796e8c95b7fd5d3f9950821" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1bb99f9b0796e8c95b7fd5d3f9950821.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iced" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iced.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cappuccino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cappuccino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="strawberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\strawberry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background_Light.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 234</value>
   </data>
 </root>
