@@ -42,7 +42,7 @@ namespace SDM_Coffee_Shop.UserControls
             this.lblName.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 16F);
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblName.Location = new System.Drawing.Point(22, -4);
+            this.lblName.Location = new System.Drawing.Point(22, 1);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(74, 34);
@@ -55,7 +55,7 @@ namespace SDM_Coffee_Shop.UserControls
             this.lblPrice.Font = new System.Drawing.Font("Franklin Gothic Demi Cond", 12F);
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblPrice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblPrice.Location = new System.Drawing.Point(180, 235);
+            this.lblPrice.Location = new System.Drawing.Point(180, 229);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(51, 25);
@@ -81,9 +81,9 @@ namespace SDM_Coffee_Shop.UserControls
             // 
             this.PBGrid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PBGrid.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PBGrid.Location = new System.Drawing.Point(26, 26);
+            this.PBGrid.Location = new System.Drawing.Point(31, 31);
             this.PBGrid.Name = "PBGrid";
-            this.PBGrid.Size = new System.Drawing.Size(210, 210);
+            this.PBGrid.Size = new System.Drawing.Size(200, 200);
             this.PBGrid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PBGrid.TabIndex = 4;
             this.PBGrid.TabStop = false;
@@ -96,7 +96,7 @@ namespace SDM_Coffee_Shop.UserControls
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.Background_Light;
+            this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.Overlay_blanc;
             this.Controls.Add(this.PBGrid);
             this.Controls.Add(this.btnAddToCart);
             this.Controls.Add(this.lblPrice);
