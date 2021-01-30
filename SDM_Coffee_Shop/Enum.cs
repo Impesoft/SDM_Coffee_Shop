@@ -32,4 +32,11 @@ namespace SDM_Coffee_Shop
         Medium = 1,
         Strong = 2,
     };
+
+    public enum typeOfTheine
+    {
+        Mild = 0,
+        Medium = 1,
+        Strong = 2,
+    };
 }

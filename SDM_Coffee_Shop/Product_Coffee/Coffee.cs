@@ -22,18 +22,18 @@ namespace SDM_Coffee_Shop
 
         public override List<Control> CreateControls()
         {
-            List<Control> test = new List<Control>();
+            List<Control> TempList = new List<Control>();
             CheckBox CHasMilk = new CheckBox();
             CHasMilk.Text = "Milk";
             CHasMilk.Name = "CHasMilk";
             CHasMilk.CheckedChanged += new System.EventHandler(this.SetControls);
-            test.Add(CHasMilk);
+            TempList.Add(CHasMilk);
 
             CheckBox CHasSugar = new CheckBox();
             CHasSugar.Text = "Sugar";
             CHasSugar.Name = "CHasSugar";
             CHasSugar.CheckedChanged += new System.EventHandler(this.SetControls);
-            test.Add(CHasSugar);
+            TempList.Add(CHasSugar);
 
             ComboBox CCaffeine = new ComboBox();
 
@@ -44,8 +44,8 @@ namespace SDM_Coffee_Shop
             CCaffeine.SelectedIndex = 1;
             CCaffeine.Name = "CCaffeine";
             CCaffeine.TextChanged += new System.EventHandler(this.SetControls);
-            test.Add(CCaffeine);
-            return test;
+            TempList.Add(CCaffeine);
+            return TempList;
         }
 
         public override void SetControls(object sender, EventArgs e)
