@@ -63,6 +63,16 @@ namespace SDM_Coffee_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1579818 {
+            get {
+                object obj = ResourceManager.GetObject("1579818", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1bb99f9b0796e8c95b7fd5d3f9950821 {
             get {
                 object obj = ResourceManager.GetObject("1bb99f9b0796e8c95b7fd5d3f9950821", resourceCulture);
@@ -126,6 +136,16 @@ namespace SDM_Coffee_Shop.Properties {
         internal static System.Drawing.Bitmap black {
             get {
                 object obj = ResourceManager.GetObject("black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Black_Background_Vector_RON_03 {
+            get {
+                object obj = ResourceManager.GetObject("Black Background_Vector_RON_03", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +256,16 @@ namespace SDM_Coffee_Shop.Properties {
         internal static System.Drawing.Bitmap pina1 {
             get {
                 object obj = ResourceManager.GetObject("pina1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pnggg {
+            get {
+                object obj = ResourceManager.GetObject("pnggg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
