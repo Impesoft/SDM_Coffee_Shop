@@ -74,7 +74,6 @@ namespace SDM_Coffee_Shop.UserControls
             this.btnAddToCart.TabIndex = 3;
             this.btnAddToCart.Text = "Order!";
             this.btnAddToCart.UseVisualStyleBackColor = false;
-            this.btnAddToCart.Visible = false;
             this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // PBGrid

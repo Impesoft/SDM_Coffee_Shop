@@ -74,8 +74,8 @@ namespace SDM_Coffee_Shop
             this.splitContainer1.Panel2.Controls.Add(this.btnConfirmOrder);
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.splitContainer1.Panel2MinSize = 300;
-            this.splitContainer1.Size = new System.Drawing.Size(1932, 883);
-            this.splitContainer1.SplitterDistance = 1516;
+            this.splitContainer1.Size = new System.Drawing.Size(1924, 883);
+            this.splitContainer1.SplitterDistance = 1509;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -90,7 +90,7 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(44, 40, 44, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(44, 40, 44, 40);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1516, 883);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1509, 883);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // label1
@@ -151,13 +151,14 @@ namespace SDM_Coffee_Shop
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.Background_Dark;
-            this.ClientSize = new System.Drawing.Size(1932, 883);
+            this.ClientSize = new System.Drawing.Size(1924, 883);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "SDM Coffee Shop ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
