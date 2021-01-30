@@ -36,7 +36,7 @@ namespace SDM_Coffee_Shop
             this.SuspendLayout();
             // 
             // lblAboutDescription
-            // 
+            //  //TODO
             this.lblAboutDescription.AutoSize = true;
             this.lblAboutDescription.BackColor = System.Drawing.Color.Transparent;
             this.lblAboutDescription.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
