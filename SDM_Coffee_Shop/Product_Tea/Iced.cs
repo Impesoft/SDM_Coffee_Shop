@@ -9,7 +9,7 @@ namespace SDM_Coffee_Shop
 {
     internal class Iced : Tea
     {
-        public int AmountOfCubes { get; set; }
+        public int AmountOfCubes { get; set; } \\TODO
 
         public Iced()
         {

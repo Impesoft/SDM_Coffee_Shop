@@ -28,7 +28,12 @@ namespace SDM_Coffee_Shop
             foreach (var control in beverage.CreateControls())
             {
                 control.Location = new Point(220, i);
-                
+                if (control is CheckBox || control is Label)
+                {
+                    control.BackColor = Color.Transparent;
+                    control.ForeColor = Color.White;
+                }
+
                 Controls.Add(control);
 
                 i += 25;
