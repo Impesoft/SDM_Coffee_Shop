@@ -27,7 +27,6 @@ namespace SDM_Coffee_Shop
 
                 i += 25;
             }
-
         }
 
         public event EventHandler OrderButtonClicked;

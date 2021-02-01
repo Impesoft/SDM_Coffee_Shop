@@ -19,7 +19,7 @@ namespace SDM_Coffee_Shop.UserControls
             _repo = new BeverageRepo();
         }
 
-        public int ID { get; set; }
+        public int GridID { get; set; }
 
         public string MyProductName
         {
@@ -51,7 +51,7 @@ namespace SDM_Coffee_Shop.UserControls
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
 
-            IBeverage beverage = _repo.GetBeverage(ID);
+            IBeverage beverage = _repo.GetBeverage(GridID);
             FormOrder form = new FormOrder(beverage);
 
             form.OrderButtonClicked += AddToCartButtonClicked;

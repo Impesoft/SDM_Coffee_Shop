@@ -5,12 +5,15 @@ namespace SDM_Coffee_Shop.UserControls
 {
     public partial class CartControl : UserControl
     {
+       
         public CartControl()
         {
             InitializeComponent();
         }
 
-        public int ID { get; set; }
+        public int CartID { get; set; }
+
+        public IBeverage CurrentBeverage { get; set; }
 
         public string MyProductName
         {
@@ -24,6 +27,12 @@ namespace SDM_Coffee_Shop.UserControls
             set { lblPriceProduct.Text = value; }
         }
 
+        public string Info
+        {
+            get;
+            set;
+        }
+
         public event EventHandler RemoveFromCartButtonClicked;
 
         protected virtual void OnRemoveFromCartButtonClicked(EventArgs e)
@@ -34,6 +43,11 @@ namespace SDM_Coffee_Shop.UserControls
         private void btnRemoveFromCart_Click(object sender, EventArgs e)
         {
             OnRemoveFromCartButtonClicked(e);
+        }
+
+        private void btnProductInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Info, "Product Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

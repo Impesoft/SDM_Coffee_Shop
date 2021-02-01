@@ -9,6 +9,7 @@ namespace SDM_Coffee_Shop
     {
         private ShoppingCart _cart;
         private IBeverageRepo beverageRepo;
+        private int iDCounter = 1;
 
         public FormMain()
         {
@@ -28,7 +29,7 @@ namespace SDM_Coffee_Shop
                 GridControl myUserControl = new GridControl
                 {
                     Name = $"GridControl{i}",
-                    ID = beverage.ID,
+                    GridID = beverage.ProductID,
                     MyProductName = beverage.Name,
                     Price = "€ " + beverage.Price.ToString(),
                     Image = beverage.Image
@@ -43,13 +44,16 @@ namespace SDM_Coffee_Shop
         private void GenerateShoppingCartList(IBeverage beverage)
         {
             int i = 1;
-
+            //var beverages = _cart.GetBeveragesInCart();
+            //beverage = beverages
             CartControl myUserControl = new CartControl
             {
                 Name = $"CartControl{i}",
-                ID = beverage.ID,
+                //ID = _cart.GetAmountOfItemsInCart(),
                 MyProductName = beverage.Name,
-                Price = beverage.Price.ToString()
+                Price = beverage.Price.ToString(),
+                Info = beverage.ToString(),
+                CurrentBeverage = beverage
             };
             myUserControl.RemoveFromCartButtonClicked += RemoveFromCartClickedInCartControl;
             i++;
@@ -66,18 +70,19 @@ namespace SDM_Coffee_Shop
         private void AddToCartClickedInGridControl(object sender, EventArgs e)
         {
             var userControl = sender as FormOrder;
-            
-            //var beverage = beverageRepo.GetBeverage(userControl.ID);
+            userControl.CurrentBeverage.UniqueID = iDCounter;
+
             _cart.AddBeverageToCart(userControl.CurrentBeverage);
 
             GenerateShoppingCartList(userControl.CurrentBeverage);
             lblPrice.Text = _cart.CalculatePrice().ToString();
+            iDCounter++;
         }
 
         private void RemoveFromCartClickedInCartControl(object sender, EventArgs e)
         {
             var userControl = sender as CartControl;
-            _cart.RemoveBeverageFromCart(_cart.GetBeverageInCart(userControl.ID));
+            _cart.RemoveBeverageFromCart(userControl.CurrentBeverage);
 
             flowLayoutPanel2.Controls.Remove(userControl);
             lblPrice.Text = _cart.CalculatePrice().ToString();

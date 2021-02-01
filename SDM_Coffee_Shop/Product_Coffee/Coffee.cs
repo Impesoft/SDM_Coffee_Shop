@@ -54,7 +54,7 @@ namespace SDM_Coffee_Shop
                     HasMilk = ((CheckBox)x).Checked;
                     break;
 
-                case "CSugar":
+                case "CHasSugar":
                     HasSugar = ((CheckBox)x).Checked;
                     break;
 
@@ -62,6 +62,10 @@ namespace SDM_Coffee_Shop
                     Caffeine = (typeOfCaffeine)((ComboBox)x).SelectedIndex;
                     break;
             }
+        }
+        public override string ToString()
+        {
+            return $"{Caffeine}\n Has milk? {HasMilk}\n Has Sugar? {HasSugar}";
         }
     }
 }

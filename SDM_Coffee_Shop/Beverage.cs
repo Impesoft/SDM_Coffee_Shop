@@ -17,21 +17,22 @@ namespace SDM_Coffee_Shop
         public string Description { get; set; }
 
         private static int PID = 1;
-        public int ID { get; set; }
+        public int UniqueID { get; set; }
 
         public string Image { get; set; }
 
         public string Name { get; set; }
+        public int ProductID { get; set; }
 
         protected Beverage()
         {
-            ID = PID;
+            ProductID = PID;
             PID++;
         }
 
         public override string ToString()
         {
-            string result = $"{Price.ToString()}, {Description}, {ID}, {Image}, {Name}";
+            string result = $"{Price.ToString()}, {Description}, {ProductID}, {Image}, {Name}";
             return result;
         }
 
