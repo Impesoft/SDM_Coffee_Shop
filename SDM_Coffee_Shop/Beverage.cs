@@ -44,5 +44,10 @@ namespace SDM_Coffee_Shop
         public virtual void SetControls(object sender, EventArgs e)
         {
         }
+
+        public void ResetUniqueId()
+        {
+            UniqueID = 1;
+        }
     }
 }

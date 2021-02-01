@@ -45,15 +45,14 @@ namespace SDM_Coffee_Shop
         private void GenerateShoppingCartList(IBeverage beverage)
         {
             int i = 1;
-            //var beverages = _cart.GetBeveragesInCart();
-            //beverage = beverages
+            
             CartControl myUserControl = new CartControl
             {
                 Name = $"CartControl{i}",
                 CartID = beverage.UniqueID,
                 MyProductName = beverage.Name,
                 Price = beverage.Price.ToString(),
-                Info = beverage.ToString(),                
+                Info = beverage.ToString().Replace(',','\n'),                
                 CurrentBeverage = beverage
 
                 //info toevoegen aan usercontrol via ToString Split
@@ -65,11 +64,11 @@ namespace SDM_Coffee_Shop
 
         private void btnClearCart_Click(object sender, System.EventArgs e)
         {
-
             _cart.ClearCart();
             flowLayoutPanel2.Controls.Clear();
             lblPrice.Text = _cart.CalculatePrice().ToString();
             SetAmountLabel();
+            iDCounter = 1;
         }
         private void AddToCartClickedInGridControl(object sender, EventArgs e)
         {
@@ -108,7 +107,7 @@ namespace SDM_Coffee_Shop
 
             flowLayoutPanel2.Controls.Remove(userControl);
             lblPrice.Text = _cart.CalculatePrice().ToString();
-            SetAmountLabel();
+            SetAmountLabel();            
         }
 
         private void btnConfirmOrder_Click(object sender, EventArgs e)

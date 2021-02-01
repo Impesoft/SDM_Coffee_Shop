@@ -32,8 +32,8 @@ namespace SDM_Coffee_Shop.UserControls
             this.lblNameProduct = new System.Windows.Forms.Label();
             this.lblPriceProduct = new System.Windows.Forms.Label();
             this.btnRemoveFromCart = new System.Windows.Forms.Button();
-            this.btnProductInfo = new System.Windows.Forms.Button();
             this.lblid = new System.Windows.Forms.Label();
+            this.lblDetails = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNameProduct
@@ -73,16 +73,6 @@ namespace SDM_Coffee_Shop.UserControls
             this.btnRemoveFromCart.UseVisualStyleBackColor = false;
             this.btnRemoveFromCart.Click += new System.EventHandler(this.btnRemoveFromCart_Click);
             // 
-            // btnProductInfo
-            // 
-            this.btnProductInfo.Location = new System.Drawing.Point(16, 38);
-            this.btnProductInfo.Name = "btnProductInfo";
-            this.btnProductInfo.Size = new System.Drawing.Size(75, 23);
-            this.btnProductInfo.TabIndex = 3;
-            this.btnProductInfo.Text = "button1";
-            this.btnProductInfo.UseVisualStyleBackColor = true;
-            this.btnProductInfo.Click += new System.EventHandler(this.btnProductInfo_Click);
-            // 
             // lblid
             // 
             this.lblid.AutoSize = true;
@@ -95,20 +85,32 @@ namespace SDM_Coffee_Shop.UserControls
             this.lblid.TabIndex = 4;
             this.lblid.Text = "id";
             // 
+            // lblDetails
+            // 
+            this.lblDetails.AutoSize = true;
+            this.lblDetails.BackColor = System.Drawing.Color.Transparent;
+            this.lblDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDetails.Location = new System.Drawing.Point(29, 37);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(37, 13);
+            this.lblDetails.TabIndex = 5;
+            this.lblDetails.Text = "details";
+            // 
             // CartControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SDM_Coffee_Shop.Properties.Resources.pnggg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.lblid);
-            this.Controls.Add(this.btnProductInfo);
             this.Controls.Add(this.btnRemoveFromCart);
             this.Controls.Add(this.lblPriceProduct);
             this.Controls.Add(this.lblNameProduct);
             this.Margin = new System.Windows.Forms.Padding(100, 13, 3, 3);
             this.Name = "CartControl";
-            this.Size = new System.Drawing.Size(241, 74);
+            this.Size = new System.Drawing.Size(230, 103);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,7 +121,7 @@ namespace SDM_Coffee_Shop.UserControls
         private System.Windows.Forms.Label lblNameProduct;
         private System.Windows.Forms.Label lblPriceProduct;
         private System.Windows.Forms.Button btnRemoveFromCart;
-        private System.Windows.Forms.Button btnProductInfo;
         private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.Label lblDetails;
     }
 }
