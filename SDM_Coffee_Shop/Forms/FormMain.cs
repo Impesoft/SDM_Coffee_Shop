@@ -8,6 +8,7 @@ namespace SDM_Coffee_Shop
 {
     public partial class FormMain : Form
     {
+        private FileReaderWriter readerWriter;
         private ShoppingCart _cart;
         private IBeverageRepo beverageRepo;
         private int iDCounter = 1;
@@ -16,6 +17,7 @@ namespace SDM_Coffee_Shop
         {
             InitializeComponent();
 
+            readerWriter = new FileReaderWriter();
             beverageRepo = new BeverageRepo();
             var beverages = beverageRepo.GetBeverages();
             _cart = ShoppingCart.GetShoppingCart();
@@ -112,6 +114,14 @@ namespace SDM_Coffee_Shop
 
         private void btnConfirmOrder_Click(object sender, EventArgs e)
         {
+            List<string> result = new List<string>();
+            result.Add($"Amount of products = {_cart.GetAmountOfItemsInCart()} | ");
+            result.Add($"Total price = {_cart.CalculatePrice()} | ");            
+            foreach (var beverage in _cart.GetBeveragesInCart())
+            {                
+                result.Add($"{beverage.Name}, {beverage.Price}, {beverage.ToString()} | ");
+            }            
+            readerWriter.WriteDataToFile(result.ToArray());
             FormInvoice form = new FormInvoice();
             form.ShowDialog();
         }        

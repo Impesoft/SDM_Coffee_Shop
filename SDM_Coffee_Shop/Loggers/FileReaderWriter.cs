@@ -6,7 +6,7 @@ namespace SDM_Coffee_Shop
 {
     internal class FileReaderWriter
     {
-        private string pATH_LOG_ORDERS = $"C:\\Users\\{Environment.UserName}\\source\\repos\\SDM_Coffee_Shop\\SDM_Coffee_Shop\\orderslog.txt";
+        private string pATH_LOG_ORDERS = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + "\\orderslog.txt";
 
         public string PATH_LOG_ORDERS
         {
@@ -27,15 +27,15 @@ namespace SDM_Coffee_Shop
         {
             WriteDataToFile(lines, PATH_LOG_ORDERS);
         }
-
         public void WriteDataToFile(string[] lines, string path)
         {
             using (StreamWriter writer = new StreamWriter(path, true))
             {
                 writer.WriteLine();
+                writer.Write($"{dateTime} |");
                 foreach (string line in lines)
                 {
-                    writer.Write($"{line} ");
+                    writer.Write($" {line}");
                 }
             }
             //true om nieuwe tekst toe te voegen ipv overschrijven.           
@@ -53,6 +53,7 @@ namespace SDM_Coffee_Shop
                 }
             }
             return lines;
-        }
+        }        
+
     }
 }
