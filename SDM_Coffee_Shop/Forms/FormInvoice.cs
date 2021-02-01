@@ -25,7 +25,13 @@ namespace SDM_Coffee_Shop
             string output = "";
             foreach (var item in ShoppingCart.GetShoppingCart().GetBeveragesInCart())
             {
-                output += $"{item.UniqueID}. {item.Name} Price: {item.Price} euro\n{item.ToString()}\n\n ";
+                string[] properties = item.ToString().Split(',');
+
+                output += $"{item.UniqueID}. {item.Name} Price: {item.Price} euro\n";
+                foreach (string prop in properties)
+                {
+                    output += prop + " ";
+                }
             }
 
             return output;
