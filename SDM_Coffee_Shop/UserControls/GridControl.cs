@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop.UserControls
@@ -56,7 +50,7 @@ namespace SDM_Coffee_Shop.UserControls
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
             IBeverage beverage = _repo.GetBeverage(ID);
-            Form form = new FormAbout(beverage);
+            Form form = new FormOrder(beverage);
 
             form.OrderButtenClicked += AddToCartButtonClicked;
             

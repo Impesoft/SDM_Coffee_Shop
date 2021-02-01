@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
@@ -21,7 +18,7 @@ namespace SDM_Coffee_Shop
 
         string ToString();
 
-        List<Control> CreateControls();
+        List<Control> GetControls();
 
         void SetControls(object sender, EventArgs e);
     }

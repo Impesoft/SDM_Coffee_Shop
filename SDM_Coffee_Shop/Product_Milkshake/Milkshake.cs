@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
@@ -16,7 +13,7 @@ namespace SDM_Coffee_Shop
         {
         }
 
-        public override List<Control> CreateControls()
+        public override List<Control> GetControls()
         {
             List<Control> TempList = new List<Control>();
             CheckBox CHasDairy = new CheckBox();
