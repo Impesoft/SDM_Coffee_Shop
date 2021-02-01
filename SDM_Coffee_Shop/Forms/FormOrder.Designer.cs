@@ -49,7 +49,7 @@ namespace SDM_Coffee_Shop
             // 
             // btnOrder
             // 
-            this.btnOrder.Location = new System.Drawing.Point(12, 181);
+            this.btnOrder.Location = new System.Drawing.Point(12, 199);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(99, 40);
             this.btnOrder.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace SDM_Coffee_Shop
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(136, 181);
+            this.btnClose.Location = new System.Drawing.Point(136, 199);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(94, 40);
             this.btnClose.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace SDM_Coffee_Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(244, 235);
+            this.ClientSize = new System.Drawing.Size(244, 258);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.metroLabel1);

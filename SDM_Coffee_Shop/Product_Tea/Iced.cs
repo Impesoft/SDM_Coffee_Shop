@@ -19,6 +19,12 @@ namespace SDM_Coffee_Shop
         public override List<Control> GetControls()
         {
             List<Control> TempList = base.GetControls();
+
+            Label LBLPercentageAlcohol = new Label();
+            LBLPercentageAlcohol.Text = "Amount of Ice Cubes: ";
+            LBLPercentageAlcohol.Width = 200;
+            TempList.Add(LBLPercentageAlcohol);
+
             NumericUpDown CAmountOfCubes = new NumericUpDown();
             CAmountOfCubes.Text = "Amount of Cubes";
             CAmountOfCubes.Name = "CAmountOfCubes";
@@ -44,7 +50,7 @@ namespace SDM_Coffee_Shop
 
         public override string ToString()
         {
-            return base.ToString() + $",Amount of Cubes: {AmountOfCubes}";
+            return base.ToString() + $",Amount of Ice Cubes: {AmountOfCubes}";
         }
     }
 }

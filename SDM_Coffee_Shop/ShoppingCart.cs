@@ -4,7 +4,7 @@ namespace SDM_Coffee_Shop
 {
     internal class ShoppingCart : IShoppingCart
     {
-        private List<IBeverage> _beverages;
+        public List<IBeverage> _beverages;
 
         private static ShoppingCart _cart;
 
@@ -36,7 +36,7 @@ namespace SDM_Coffee_Shop
 
         public void AddBeverageToCart(IBeverage beverage)
         {
-            _beverages.Add(beverage);            
+            _beverages.Add(beverage);
         }
 
         public List<IBeverage> GetBeveragesInCart()
@@ -55,6 +55,7 @@ namespace SDM_Coffee_Shop
             }
             return null;
         }
+
         public int GetAmountOfItemsInCart()
         {
             return _beverages.Count;

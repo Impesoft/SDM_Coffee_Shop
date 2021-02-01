@@ -20,7 +20,7 @@ namespace SDM_Coffee_Shop
         {
             List<Control> TempList = new List<Control>();
             CheckBox CIsFreshFruit = new CheckBox();
-            CIsFreshFruit.Text = "Not frozen Fruit";
+            CIsFreshFruit.Text = "Fresh Fruit";
             CIsFreshFruit.Name = "CIsFreshFruit";
             CIsFreshFruit.CheckedChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CIsFreshFruit);

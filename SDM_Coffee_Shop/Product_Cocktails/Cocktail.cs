@@ -27,8 +27,8 @@ namespace SDM_Coffee_Shop
             Label LBLPercentageAlcohol = new Label();
             LBLPercentageAlcohol.Text = "Select your alcohol percentage: ";
             LBLPercentageAlcohol.Width = 200;
-
             TempList.Add(LBLPercentageAlcohol);
+
             TrackBar CPercentageAlcohol = new TrackBar();
             CPercentageAlcohol.Name = "CPercentageAlcohol";
             CPercentageAlcohol.Width = 200;

@@ -23,11 +23,11 @@ namespace SDM_Coffee_Shop
         public string GetProducts()
         {
             string output = "";
-            foreach (var item in ShoppingCart.GetShoppingCart().GetBeveragesInCart())
+            foreach (var item in ShoppingCart.GetShoppingCart()._beverages)
             {
                 string[] properties = item.ToString().Split(',');
 
-                output += $"{item.UniqueID}. {item.Name} Price: {item.Price} euro\n";
+                output += $"\n\n{item.UniqueID}. {item.Name} Price: {item.Price} euro\n";
                 foreach (string prop in properties)
                 {
                     output += prop + " ";
@@ -39,12 +39,7 @@ namespace SDM_Coffee_Shop
 
         public string GetTotalPrice()
         {
-            double price = 0;
-            foreach (var item in ShoppingCart.GetShoppingCart().GetBeveragesInCart())
-            {
-                price += item.Price;
-            }
-
+            double price = ShoppingCart.GetShoppingCart().CalculatePrice();
             return $"\nTotal price : {Math.Round(price, 2)} euro \t Excl. BTW: {Math.Round(price * 0.79, 2) } \t BTW: {Math.Round(price * 0.21, 2) }";
         }
     }
