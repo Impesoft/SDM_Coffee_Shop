@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace SDM_Coffee_Shop
 {
     internal class FileReaderWriter
     {
         private string pATH_LOG_ORDERS = $"C:\\Users\\{Environment.UserName}\\source\\repos\\SDM_Coffee_Shop\\SDM_Coffee_Shop\\orderslog.txt";
-        
 
         public string PATH_LOG_ORDERS
         {
             get { return pATH_LOG_ORDERS; }
-        }        
+        }
 
         private string dateTime = Convert.ToString(System.DateTime.Now);
 
@@ -35,7 +32,7 @@ namespace SDM_Coffee_Shop
         //    {
         //        writer.Write($"{line} ");
         //    }
-        //}       
+        //}
 
         //public List<string> ReadDataFromFile(string path)
         //{
@@ -50,6 +47,6 @@ namespace SDM_Coffee_Shop
         //    }
 
         //    return lines;
-        //}   
+        //}
     }
 }

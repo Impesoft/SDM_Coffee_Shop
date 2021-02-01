@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
     internal class Iced : Tea
     {
-        public int AmountOfCubes { get; set; } //TODO
+        public int AmountOfCubes { get; set; }
 
         public Iced()
         {
