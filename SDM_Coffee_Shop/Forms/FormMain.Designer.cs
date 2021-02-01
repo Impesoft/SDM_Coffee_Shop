@@ -1,7 +1,7 @@
 ﻿
 namespace SDM_Coffee_Shop
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.

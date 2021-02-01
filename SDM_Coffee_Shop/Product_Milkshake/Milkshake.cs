@@ -16,7 +16,7 @@ namespace SDM_Coffee_Shop
         {
         }
 
-        public override List<Control> CreateControls()
+        public override List<Control> GetControls()
         {
             List<Control> TempList = new List<Control>();
             CheckBox CHasDairy = new CheckBox();

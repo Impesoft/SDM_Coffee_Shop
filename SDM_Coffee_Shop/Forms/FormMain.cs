@@ -5,12 +5,12 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         private ShoppingCart _cart;
         private IBeverageRepo beverageRepo;
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
 
@@ -35,6 +35,7 @@ namespace SDM_Coffee_Shop
                 };
                 i++;
                 myUserControl.AddToCartButtonClicked += AddToCartClickedInGridControl;
+
                 flowLayoutPanel1.Controls.Add(myUserControl);
             }
         }

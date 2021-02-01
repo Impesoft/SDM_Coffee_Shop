@@ -35,7 +35,7 @@ namespace SDM_Coffee_Shop
             return result;
         }
 
-        public virtual List<Control> CreateControls()
+        public virtual List<Control> GetControls()
         {
             return null;
         }
