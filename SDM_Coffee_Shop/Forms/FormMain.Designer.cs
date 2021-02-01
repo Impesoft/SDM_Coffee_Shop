@@ -32,14 +32,14 @@ namespace SDM_Coffee_Shop
             this.lblCoffee = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblAmountOfItemsInCart = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClearCart = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.btnConfirmOrder = new System.Windows.Forms.Button();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lblAmountOfItemsInCart = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -104,13 +104,49 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel1.Size = new System.Drawing.Size(979, 690);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(245, 643);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "/10";
+            // 
+            // lblAmountOfItemsInCart
+            // 
+            this.lblAmountOfItemsInCart.AutoSize = true;
+            this.lblAmountOfItemsInCart.BackColor = System.Drawing.Color.Transparent;
+            this.lblAmountOfItemsInCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmountOfItemsInCart.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblAmountOfItemsInCart.Location = new System.Drawing.Point(214, 643);
+            this.lblAmountOfItemsInCart.Name = "lblAmountOfItemsInCart";
+            this.lblAmountOfItemsInCart.Size = new System.Drawing.Size(25, 25);
+            this.lblAmountOfItemsInCart.TabIndex = 6;
+            this.lblAmountOfItemsInCart.Text = "0";
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl1.Location = new System.Drawing.Point(15, 644);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(200, 20);
+            this.lbl1.TabIndex = 5;
+            this.lbl1.Text = "Amount of items in cart:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(33, 473);
+            this.label1.Location = new System.Drawing.Point(36, 567);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 33);
             this.label1.TabIndex = 4;
@@ -124,7 +160,7 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(300, 383);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(300, 482);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
             // btnClearCart
@@ -132,7 +168,7 @@ namespace SDM_Coffee_Shop
             this.btnClearCart.BackColor = System.Drawing.Color.Silver;
             this.btnClearCart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnClearCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearCart.Location = new System.Drawing.Point(153, 406);
+            this.btnClearCart.Location = new System.Drawing.Point(156, 500);
             this.btnClearCart.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnClearCart.Name = "btnClearCart";
             this.btnClearCart.Size = new System.Drawing.Size(121, 52);
@@ -147,7 +183,7 @@ namespace SDM_Coffee_Shop
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(207, 473);
+            this.lblPrice.Location = new System.Drawing.Point(210, 567);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(36, 39);
@@ -159,7 +195,7 @@ namespace SDM_Coffee_Shop
             this.btnConfirmOrder.BackColor = System.Drawing.Color.Silver;
             this.btnConfirmOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConfirmOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmOrder.Location = new System.Drawing.Point(30, 406);
+            this.btnConfirmOrder.Location = new System.Drawing.Point(33, 500);
             this.btnConfirmOrder.Margin = new System.Windows.Forms.Padding(1);
             this.btnConfirmOrder.Name = "btnConfirmOrder";
             this.btnConfirmOrder.Size = new System.Drawing.Size(117, 52);
@@ -167,42 +203,6 @@ namespace SDM_Coffee_Shop
             this.btnConfirmOrder.Text = "Confirm Order";
             this.btnConfirmOrder.UseVisualStyleBackColor = false;
             this.btnConfirmOrder.Click += new System.EventHandler(this.btnConfirmOrder_Click);
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.Transparent;
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl1.Location = new System.Drawing.Point(12, 550);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(200, 20);
-            this.lbl1.TabIndex = 5;
-            this.lbl1.Text = "Amount of items in cart:";
-            // 
-            // lblAmountOfItemsInCart
-            // 
-            this.lblAmountOfItemsInCart.AutoSize = true;
-            this.lblAmountOfItemsInCart.BackColor = System.Drawing.Color.Transparent;
-            this.lblAmountOfItemsInCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmountOfItemsInCart.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAmountOfItemsInCart.Location = new System.Drawing.Point(214, 549);
-            this.lblAmountOfItemsInCart.Name = "lblAmountOfItemsInCart";
-            this.lblAmountOfItemsInCart.Size = new System.Drawing.Size(25, 25);
-            this.lblAmountOfItemsInCart.TabIndex = 6;
-            this.lblAmountOfItemsInCart.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(240, 549);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "/10";
             // 
             // FormMain
             // 

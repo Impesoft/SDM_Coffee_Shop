@@ -33,8 +33,8 @@ namespace SDM_Coffee_Shop.UserControls
 
         public string Info
         {
-            get;
-            set;
+            get { return lblDetails.Text; }
+            set { lblDetails.Text = value; }
         }
 
         public event EventHandler RemoveFromCartButtonClicked;
@@ -48,10 +48,6 @@ namespace SDM_Coffee_Shop.UserControls
         {
             OnRemoveFromCartButtonClicked(e);
         }
-
-        private void btnProductInfo_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(Info, "Product Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+               
     }
 }
