@@ -53,5 +53,10 @@ namespace SDM_Coffee_Shop
                     break;
             }
         }
+
+        public override string ToString()
+        {
+            return $"Ice:{(HasIce ? "Yes" : "No")},Alcohol: {PercentageAlcohol}%";
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace SDM_Coffee_Shop
 
         public override string ToString()
         {
-            return base.ToString() + $"\nType of Roast: {TypeOfRoast}";
+            return base.ToString() + $",Type of Roast: {TypeOfRoast}";
         }
     }
 }

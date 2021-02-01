@@ -66,7 +66,7 @@ namespace SDM_Coffee_Shop
 
         public override string ToString()
         {
-            return $"{Caffeine}\n Has milk? {HasMilk}\n Has Sugar? {HasSugar}";
+            return $"Caffeïne: {Caffeine},Milk:{(HasMilk ? "Yes" : "No")},Sugar: {(HasSugar ? "Yes" : "No")}";
         }
     }
 }
