@@ -11,7 +11,11 @@ namespace SDM_Coffee_Shop.UserControls
             InitializeComponent();
         }
 
-        public int CartID { get; set; }
+        public int CartID
+        {
+            get { return Convert.ToInt32(lblid.Text); }
+            set { lblid.Text = value.ToString(); ; }
+        }
 
         public IBeverage CurrentBeverage { get; set; }
 
