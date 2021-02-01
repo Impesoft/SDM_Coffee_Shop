@@ -58,7 +58,9 @@ namespace SDM_Coffee_Shop.UserControls
             IBeverage beverage = _repo.GetBeverage(ID);
             Form form = new FormAbout(beverage);
 
-            form.Show();
+            form.OrderButtenClicked += AddToCartButtonClicked;
+            
+            form.ShowDialog();
         }
 
         //ADD EVENT HANDLER
