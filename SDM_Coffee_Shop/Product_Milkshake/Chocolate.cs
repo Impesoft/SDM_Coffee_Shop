@@ -20,7 +20,7 @@ namespace SDM_Coffee_Shop
             Description = "Three simple ingredients are all it takes to make an easy homemade chocolate milkshake. Vanilla ice cream, ice cold milk, HERSHEY'S Syrup. Blend, pour, sip.";
         }
 
-        public override List<Control> CreateControls()
+        public override List<Control> GetControls()
         {
             ComboBox CTypeOfChocolate = new ComboBox();
             foreach (var item in Enum.GetValues(typeof(typeOfChocolate)))
@@ -29,7 +29,7 @@ namespace SDM_Coffee_Shop
             }
 
             CTypeOfChocolate.SelectedIndex = 1;
-            List<Control> test2 = base.CreateControls();
+            List<Control> test2 = base.GetControls();
             CTypeOfChocolate.Name = "CTypeOfChocolate";
             CTypeOfChocolate.TextChanged += new System.EventHandler(this.SetControls);
             test2.Add(CTypeOfChocolate);

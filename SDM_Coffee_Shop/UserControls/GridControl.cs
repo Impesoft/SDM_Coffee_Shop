@@ -56,9 +56,9 @@ namespace SDM_Coffee_Shop.UserControls
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
             IBeverage beverage = _repo.GetBeverage(ID);
-            Form form = new FormAbout(beverage);
+            Form form = new FormOrder(beverage);
 
-            form.Show();
+            form.ShowDialog();
         }
 
         //ADD EVENT HANDLER

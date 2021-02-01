@@ -21,7 +21,7 @@ namespace SDM_Coffee_Shop
 
         string ToString();
 
-        List<Control> CreateControls();
+        List<Control> GetControls();
 
         void SetControls(object sender, EventArgs e);
     }

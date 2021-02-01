@@ -18,7 +18,7 @@ namespace SDM_Coffee_Shop
             PercentageAlcohol = 50;
         }
 
-        public override List<Control> CreateControls()
+        public override List<Control> GetControls()
         {
             List<Control> TempList = new List<Control>();
             CheckBox CHasIce = new CheckBox();
@@ -28,14 +28,14 @@ namespace SDM_Coffee_Shop
             TempList.Add(CHasIce);
 
             Label LBLPercentageAlcohol = new Label();
-            LBLPercentageAlcohol.Text = "Choose your alcohos percentage: ";
+            LBLPercentageAlcohol.Text = "Select your alcohol percentage: ";
             LBLPercentageAlcohol.Width = 200;
 
             TempList.Add(LBLPercentageAlcohol);
             TrackBar CPercentageAlcohol = new TrackBar();
             CPercentageAlcohol.Name = "CPercentageAlcohol";
             CPercentageAlcohol.Width = 200;
-            CPercentageAlcohol.BackColor = System.Drawing.Color.Coral;
+            CPercentageAlcohol.BackColor = System.Drawing.Color.White;
             CPercentageAlcohol.ValueChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CPercentageAlcohol);
 
@@ -53,7 +53,7 @@ namespace SDM_Coffee_Shop
                     HasIce = ((CheckBox)x).Checked;
                     break;
 
-                case "CPercentageAlcohol": //TOADD
+                case "CPercentageAlcohol":
                     PercentageAlcohol = ((TrackBar)x).Value;
                     break;
             }

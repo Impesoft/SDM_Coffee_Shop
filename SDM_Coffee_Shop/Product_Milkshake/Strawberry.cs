@@ -20,7 +20,7 @@ namespace SDM_Coffee_Shop
             Description = "Who can resist Strawberry Milkshake? Look at is cute pinkness! See how tender it looks? I bet it will taste as sweet as my first kiss! Now the question is, with dairy or without?";
         }
 
-        public override List<Control> CreateControls()
+        public override List<Control> GetControls()
         {
             List<Control> TempList = new List<Control>();
             CheckBox CIsFreshFruit = new CheckBox();
@@ -29,7 +29,7 @@ namespace SDM_Coffee_Shop
             CIsFreshFruit.CheckedChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CIsFreshFruit);
 
-            List<Control> test2 = base.CreateControls();
+            List<Control> test2 = base.GetControls();
             test2.Add(CIsFreshFruit);
             return test2;
         }

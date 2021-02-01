@@ -17,7 +17,7 @@ namespace SDM_Coffee_Shop
             Description = "Mint tea is a herbal tea made by infusing mint leaves in hot water. Mint tea made with peppermint leaves is called peppermint tea, and mint tea made with spearmint is called spearmint tea.";
         }
 
-        public override List<Control> CreateControls()
+        public override List<Control> GetControls()
         {
             ComboBox CTypeOfTea = new ComboBox();
             foreach (var item in Enum.GetValues(typeof(typeOfTea)))
@@ -26,7 +26,7 @@ namespace SDM_Coffee_Shop
             }
 
             CTypeOfTea.SelectedIndex = 1;
-            List<Control> test2 = base.CreateControls();
+            List<Control> test2 = base.GetControls();
             CTypeOfTea.Name = "CTypeOfTea";
             CTypeOfTea.TextChanged += new System.EventHandler(this.SetControls);
             test2.Add(CTypeOfTea);
