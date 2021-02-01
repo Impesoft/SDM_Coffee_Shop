@@ -50,11 +50,13 @@ namespace SDM_Coffee_Shop
             CartControl myUserControl = new CartControl
             {
                 Name = $"CartControl{i}",
-                //ID = _cart.GetAmountOfItemsInCart(),
+                CartID = beverage.UniqueID,
                 MyProductName = beverage.Name,
                 Price = beverage.Price.ToString(),
-                Info = beverage.ToString(),
+                Info = beverage.ToString(),                
                 CurrentBeverage = beverage
+
+                //info toevoegen aan usercontrol via ToString Split
             };
             myUserControl.RemoveFromCartButtonClicked += RemoveFromCartClickedInCartControl;
             i++;
