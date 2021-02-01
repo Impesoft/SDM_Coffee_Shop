@@ -10,7 +10,9 @@ namespace SDM_Coffee_Shop
 
         string Description { get; set; }
 
-        int ID { get; set; }
+        int UniqueID { get; set; }
+
+        int ProductID { get; set; }
 
         string Image { get; set; }
 

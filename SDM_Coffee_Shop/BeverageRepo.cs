@@ -12,7 +12,7 @@ namespace SDM_Coffee_Shop
             List<IBeverage> allBeverages = GetBeverages();
 
             // LAMBDA Expression. Return the first object in which the ID property equals user input
-            var selectedBeverage = allBeverages.Where(x => x.ID == id).FirstOrDefault();
+            var selectedBeverage = allBeverages.Where(x => x.ProductID == id).FirstOrDefault();
 
             return selectedBeverage;
         }

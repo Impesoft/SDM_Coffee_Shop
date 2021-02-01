@@ -36,7 +36,7 @@ namespace SDM_Coffee_Shop
 
         public void AddBeverageToCart(IBeverage beverage)
         {
-            _beverages.Add(beverage);
+            _beverages.Add(beverage);            
         }
 
         public List<IBeverage> GetBeveragesInCart()
@@ -48,17 +48,21 @@ namespace SDM_Coffee_Shop
         {
             foreach (var drink in _beverages)
             {
-                if (drink.ID == id)
+                if (drink.UniqueID == id)
                 {
                     return drink;
                 }
             }
             return null;
         }
-
-        public void RemoveBeverageFromCart(IBeverage beverageToRemove)
+        public int GetAmountOfItemsInCart()
         {
-            _beverages.Remove(beverageToRemove);
+            return _beverages.Count;
+        }
+
+        public void RemoveBeverageFromCart(IBeverage beverage)
+        {
+            _beverages.Remove(beverage);
         }
 
         public void ClearCart()
