@@ -41,5 +41,10 @@ namespace SDM_Coffee_Shop
                 AmountOfCubes = (int)((NumericUpDown)sender).Value;
             }
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + $",Amount of Cubes: {AmountOfCubes}";
+        }
     }
 }

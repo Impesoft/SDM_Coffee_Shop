@@ -62,5 +62,10 @@ namespace SDM_Coffee_Shop
                     break;
             }
         }
+
+        public override string ToString()
+        {
+            return $"Theine: {Theine},Milk:{(HasMilk ? "Yes" : "No")},Sugar: {(HasSugar ? "Yes" : "No")}";
+        }
     }
 }

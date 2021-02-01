@@ -39,7 +39,7 @@ namespace SDM_Coffee_Shop
                 price += item.Price;
             }
 
-            return $"\nTotal price : {price} euro \t Excl. BTW: {price * 0.79} \t BTW: {price * 0.21}";
+            return $"\nTotal price : {Math.Round(price, 2)} euro \t Excl. BTW: {Math.Round(price * 0.79, 2) } \t BTW: {Math.Round(price * 0.21, 2) }";
         }
     }
 }

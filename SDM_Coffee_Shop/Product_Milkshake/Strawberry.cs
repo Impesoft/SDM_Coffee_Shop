@@ -38,5 +38,10 @@ namespace SDM_Coffee_Shop
                 IsFreshFruit = ((CheckBox)sender).Checked;
             }
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + $",Fresh fruit: {(IsFreshFruit ? "Yes" : "No")}";
+        }
     }
 }

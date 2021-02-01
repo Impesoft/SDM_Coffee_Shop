@@ -42,5 +42,10 @@ namespace SDM_Coffee_Shop
                 TypeOfRoast = (typeOfRoast)((ComboBox)x).SelectedIndex;
             }
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + $",Type of Roast: {TypeOfRoast}";
+        }
     }
 }
