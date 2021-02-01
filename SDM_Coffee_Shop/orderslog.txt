@@ -1,0 +1,11 @@
+
+System.Collections.Generic.List`1[SDM_Coffee_Shop.IBeverage] 
+Dairy:No Whipped Cream: Yes Type of chocolate: White 1/02/2021 16:25:11, Ice:No, Alcohol: 50%, 
+1/02/2021 16:32:12, Espresso, Caffeïne: Mild,Milk:No,Sugar: No,Type of Roast: Light || , Iced Tea, Theine: Mild,Milk:No,Sugar: No,Amount of Cubes: 0 || , Cappuccino, Caffeïne: Mild,Milk:No,Sugar: No || , 
+1/02/2021 16:34:12, Chocolate Shake, Dairy:No,Whipped Cream: No,Type of chocolate: White | , Banana Shake, Dairy:No,Whipped Cream: No,Fresh fruit: No | 
+1/02/2021 16:35:16 |, Chocolate Shake, Dairy:No,Whipped Cream: No,Type of chocolate: White | , Whiskey Sour, Ice:No,Alcohol: 50% | , Pina Colada, Ice:No,Alcohol: 50% | , Green Tea, Theine: Mild,Milk:No,Sugar: No | 
+1/02/2021 16:36:52 | Deca, Caffeïne: Mild,Milk:No,Sugar: No |  Espresso, Caffeïne: Mild,Milk:No,Sugar: No,Type of Roast: Light |  Green Tea, Theine: Mild,Milk:No,Sugar: No | 
+1/02/2021 16:39:44 | Chocolate Shake, 5,99, Dairy:No,Whipped Cream: No,Type of chocolate: White |  Mint Tea, 2,99, Theine: Mild,Milk:No,Sugar: No,Type of tea: peppermint |  Black Tea, 2,99, Theine: Mild,Milk:No,Sugar: No |  Total price= 11,97
+1/02/2021 16:40:57 | Total price= 16,97 Banana Shake, 5,99, Dairy:No,Whipped Cream: No,Fresh fruit: No |  Pina Colada, 7,99, Ice:No,Alcohol: 50% |  Mint Tea, 2,99, Theine: Mild,Milk:No,Sugar: No,Type of tea: peppermint | 
+1/02/2021 16:41:29 | Total price= 20,97 |  Cappuccino, 4,99, Caffeïne: Mild,Milk:No,Sugar: No |  Whiskey Sour, 9,99, Ice:No,Alcohol: 50% |  Vanilla Shake, 5,99, Dairy:No,Whipped Cream: No | 
+1/02/2021 16:44:04 | Amount of products = 3 |  Total price = 15,97 |  Deca, 2,99, Caffeïne: Mild,Milk:No,Sugar: No |  Whiskey Sour, 9,99, Ice:No,Alcohol: 50% |  Mint Tea, 2,99, Theine: Mild,Milk:No,Sugar: No,Type of tea: peppermint | 
