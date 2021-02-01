@@ -87,5 +87,11 @@ namespace SDM_Coffee_Shop
             flowLayoutPanel2.Controls.Remove(userControl);
             lblPrice.Text = _cart.CalculatePrice().ToString();
         }
+
+        private void btnConfirmOrder_Click(object sender, EventArgs e)
+        {
+            FormInvoice form = new FormInvoice();
+            form.ShowDialog();
+        }
     }
 }

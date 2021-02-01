@@ -63,6 +63,7 @@ namespace SDM_Coffee_Shop
                     break;
             }
         }
+
         public override string ToString()
         {
             return $"{Caffeine}\n Has milk? {HasMilk}\n Has Sugar? {HasSugar}";

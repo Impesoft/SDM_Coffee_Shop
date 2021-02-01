@@ -7,6 +7,7 @@ namespace SDM_Coffee_Shop
     public partial class FormOrder : MetroFramework.Forms.MetroForm
     {
         public IBeverage CurrentBeverage { get; set; }
+
         public FormOrder(IBeverage beverage)
         {
             CurrentBeverage = beverage;
@@ -34,12 +35,14 @@ namespace SDM_Coffee_Shop
         protected virtual void OnOrderButtonClicked(EventArgs e)
         {
             OrderButtonClicked?.Invoke(this, e);
-        }        
+        }
 
         private void BtnOrder_Click(object sender, EventArgs e)
         {
             OnOrderButtonClicked(e);
+            Close();
         }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();

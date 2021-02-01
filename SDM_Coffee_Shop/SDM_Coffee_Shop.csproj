@@ -57,10 +57,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeverageRepo.cs" />
-    <Compile Include="Cocktails\Cocktail.cs" />
-    <Compile Include="Cocktails\PinaColada.cs" />
-    <Compile Include="Cocktails\WhiskeySour.cs" />
-    <Compile Include="Cocktails\WhiteRussian.cs" />
+    <Compile Include="Product_Cocktails\Cocktail.cs" />
+    <Compile Include="Product_Cocktails\PinaColada.cs" />
+    <Compile Include="Product_Cocktails\WhiskeySour.cs" />
+    <Compile Include="Product_Cocktails\WhiteRussian.cs" />
+    <Compile Include="Forms\FormInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormInvoice.Designer.cs">
+      <DependentUpon>FormInvoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <Compile Include="UserControls\CartControl.Designer.cs">
       <DependentUpon>CartControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\FormInvoice.resx">
+      <DependentUpon>FormInvoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
