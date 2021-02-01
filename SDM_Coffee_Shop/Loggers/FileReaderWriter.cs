@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace SDM_Coffee_Shop
 {
@@ -13,40 +15,44 @@ namespace SDM_Coffee_Shop
 
         private string dateTime = Convert.ToString(System.DateTime.Now);
 
-        //public void WriteDataToFile(string textToWriteToFile, string path)
-        //{
-        //    using StreamWriter writer = new StreamWriter(path, true);
-        //    writer.WriteLine(textToWriteToFile);
-        //}
+        public void WriteDataToFile(string textToWriteToFile, string path)
+        {
+            using (StreamWriter writer = new StreamWriter(path, true)) 
+            { 
+                writer.WriteLine(textToWriteToFile); 
+            }             
+        }
 
-        //public void WriteDataToFile(string[] lines)
-        //{
-        //    WriteDataToFile(lines, PATH_LOG_ORDERS);
-        //}
+        public void WriteDataToFile(string[] lines)
+        {
+            WriteDataToFile(lines, PATH_LOG_ORDERS);
+        }
 
-        //public void WriteDataToFile(string[] lines, string path)
-        //{
-        //    using StreamWriter writer = new StreamWriter(path, true); //true om nieuwe tekst toe te voegen ipv overschrijven.
-        //    writer.WriteLine();
-        //    foreach (string line in lines)
-        //    {
-        //        writer.Write($"{line} ");
-        //    }
-        //}
+        public void WriteDataToFile(string[] lines, string path)
+        {
+            using (StreamWriter writer = new StreamWriter(path, true))
+            {
+                writer.WriteLine();
+                foreach (string line in lines)
+                {
+                    writer.Write($"{line} ");
+                }
+            }
+            //true om nieuwe tekst toe te voegen ipv overschrijven.           
+        }
 
-        //public List<string> ReadDataFromFile(string path)
-        //{
-        //    using StreamReader reader = new StreamReader(path);
-        //    string line = string.Empty;
-
-        //    List<string> lines = new List<string>();
-
-        //    while ((line = reader.ReadLine()) != null)
-        //    {
-        //        lines.Add(line);
-        //    }
-
-        //    return lines;
-        //}
+        public List<string> ReadDataFromFile(string path)
+        {
+            List<string> lines = new List<string>();
+            string line = string.Empty;
+            using (StreamReader reader = new StreamReader(path))
+            {
+                while ((line = reader.ReadLine()) != null)
+                {
+                    lines.Add(line);
+                }
+            }
+            return lines;
+        }
     }
 }

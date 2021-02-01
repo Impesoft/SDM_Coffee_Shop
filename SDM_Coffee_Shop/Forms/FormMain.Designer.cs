@@ -46,9 +46,10 @@ namespace SDM_Coffee_Shop
             // lblCoffee
             // 
             this.lblCoffee.AutoSize = true;
-            this.lblCoffee.Location = new System.Drawing.Point(39, 37);
+            this.lblCoffee.Location = new System.Drawing.Point(26, 24);
+            this.lblCoffee.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCoffee.Name = "lblCoffee";
-            this.lblCoffee.Size = new System.Drawing.Size(53, 20);
+            this.lblCoffee.Size = new System.Drawing.Size(35, 13);
             this.lblCoffee.TabIndex = 0;
             this.lblCoffee.Text = "label1";
             // 
@@ -57,7 +58,6 @@ namespace SDM_Coffee_Shop
             this.splitContainer1.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -78,9 +78,8 @@ namespace SDM_Coffee_Shop
             this.splitContainer1.Panel2.Controls.Add(this.btnConfirmOrder);
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.splitContainer1.Panel2MinSize = 300;
-            this.splitContainer1.Size = new System.Drawing.Size(2165, 1103);
-            this.splitContainer1.SplitterDistance = 1697;
-            this.splitContainer1.SplitterWidth = 6;
+            this.splitContainer1.Size = new System.Drawing.Size(1283, 690);
+            this.splitContainer1.SplitterDistance = 979;
             this.splitContainer1.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -93,10 +92,10 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(49, 50, 49, 50);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(33, 32, 33, 32);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(49, 50, 49, 50);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1697, 1103);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(33, 32, 33, 32);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(979, 690);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // label1
@@ -105,10 +104,9 @@ namespace SDM_Coffee_Shop
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(50, 727);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(33, 473);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 59);
+            this.label1.Size = new System.Drawing.Size(155, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Total Price";
             // 
@@ -118,20 +116,20 @@ namespace SDM_Coffee_Shop
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(462, 438);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(300, 285);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
             // btnClearCart
             // 
             this.btnClearCart.BackColor = System.Drawing.Color.Silver;
             this.btnClearCart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClearCart.Font = new System.Drawing.Font("Overlock Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearCart.Location = new System.Drawing.Point(230, 624);
-            this.btnClearCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClearCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearCart.Location = new System.Drawing.Point(153, 406);
+            this.btnClearCart.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnClearCart.Name = "btnClearCart";
-            this.btnClearCart.Size = new System.Drawing.Size(181, 80);
+            this.btnClearCart.Size = new System.Drawing.Size(121, 52);
             this.btnClearCart.TabIndex = 2;
             this.btnClearCart.Text = "Empty Cart";
             this.btnClearCart.UseVisualStyleBackColor = false;
@@ -143,9 +141,10 @@ namespace SDM_Coffee_Shop
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(310, 727);
+            this.lblPrice.Location = new System.Drawing.Point(207, 473);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(64, 71);
+            this.lblPrice.Size = new System.Drawing.Size(36, 39);
             this.lblPrice.TabIndex = 1;
             this.lblPrice.Text = "0";
             // 
@@ -153,26 +152,26 @@ namespace SDM_Coffee_Shop
             // 
             this.btnConfirmOrder.BackColor = System.Drawing.Color.Silver;
             this.btnConfirmOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConfirmOrder.Font = new System.Drawing.Font("Overlock Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmOrder.Location = new System.Drawing.Point(45, 624);
-            this.btnConfirmOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirmOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmOrder.Location = new System.Drawing.Point(30, 406);
+            this.btnConfirmOrder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnConfirmOrder.Name = "btnConfirmOrder";
-            this.btnConfirmOrder.Size = new System.Drawing.Size(176, 80);
+            this.btnConfirmOrder.Size = new System.Drawing.Size(117, 52);
             this.btnConfirmOrder.TabIndex = 0;
             this.btnConfirmOrder.Text = "Confirm Order";
             this.btnConfirmOrder.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2165, 1103);
+            this.ClientSize = new System.Drawing.Size(1283, 690);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.lblCoffee);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Name = "FormMain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "SDM Coffee Shop ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

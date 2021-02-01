@@ -65,12 +65,12 @@ namespace SDM_Coffee_Shop
 
         private void AddToCartClickedInGridControl(object sender, EventArgs e)
         {
-            var userControl = sender as GridControl;
+            var userControl = sender as FormOrder;
+            
+            //var beverage = beverageRepo.GetBeverage(userControl.ID);
+            _cart.AddBeverageToCart(userControl.CurrentBeverage);
 
-            var beverage = beverageRepo.GetBeverage(userControl.ID);
-            _cart.AddBeverageToCart(beverage);
-
-            GenerateShoppingCartList(beverage);
+            GenerateShoppingCartList(userControl.CurrentBeverage);
             lblPrice.Text = _cart.CalculatePrice().ToString();
         }
 
