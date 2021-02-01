@@ -6,18 +6,20 @@ namespace SDM_Coffee_Shop
 {
     public partial class FormOrder : MetroFramework.Forms.MetroForm
     {
+        public IBeverage CurrentBeverage { get; set; }
         public FormOrder(IBeverage beverage)
         {
+            CurrentBeverage = beverage;
             InitializeComponent();
-            Text = beverage.Name;
+            Text = CurrentBeverage.Name;
 
             ResourceManager rm = Properties.Resources.ResourceManager;
-            Bitmap myImage = (Bitmap)rm.GetObject(beverage.Image);
-            metroLabel1.Text = beverage.Description;
+            Bitmap myImage = (Bitmap)rm.GetObject(CurrentBeverage.Image);
+            metroLabel1.Text = CurrentBeverage.Description;
 
             int i = 65;
 
-            foreach (var control in beverage.GetControls())
+            foreach (var control in CurrentBeverage.GetControls())
             {
                 control.Location = new Point(30, i);
 
@@ -25,9 +27,21 @@ namespace SDM_Coffee_Shop
 
                 i += 25;
             }
+
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        public event EventHandler OrderButtonClicked;
+
+        protected virtual void OnOrderButtonClicked(EventArgs e)
+        {
+            OrderButtonClicked?.Invoke(this, e);
+        }        
+
+        private void BtnOrder_Click(object sender, EventArgs e)
+        {
+            OnOrderButtonClicked(e);
+        }
+        private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
         }
