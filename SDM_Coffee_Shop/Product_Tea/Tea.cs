@@ -52,19 +52,19 @@ namespace SDM_Coffee_Shop
 
         public override void SetControls(object sender, EventArgs e)
         {
-            var x = sender as Control;
-            switch (x.Name)
+            var Michiel = sender as Control;
+            switch (Michiel.Name)
             {
                 case "CHasMilk":
-                    HasMilk = ((CheckBox)x).Checked;
+                    HasMilk = ((CheckBox)Michiel).Checked;
                     break;
 
                 case "CHasSugar":
-                    HasSugar = ((CheckBox)x).Checked;
+                    HasSugar = ((CheckBox)Michiel).Checked;
                     break;
 
                 case "CTheine":
-                    Theine = (typeOfTheine)((ComboBox)x).SelectedIndex;
+                    Theine = (typeOfTheine)((ComboBox)Michiel).SelectedIndex;
                     break;
             }
         }
