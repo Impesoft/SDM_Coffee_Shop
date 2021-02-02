@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    internal abstract class Tea : Beverage
+    internal class Tea : Beverage
     {
         public typeOfTheine Theine { get; set; }
 
@@ -22,12 +22,17 @@ namespace SDM_Coffee_Shop
             CheckBox CHasMilk = new CheckBox();
             CHasMilk.Text = "Milk";
             CHasMilk.Name = "CHasMilk";
+            CHasMilk.Checked = false;
+            HasMilk = CHasMilk.Checked;
             CHasMilk.CheckedChanged += new System.EventHandler(this.SetControls);
+
             TempList.Add(CHasMilk);
 
             CheckBox CHasSugar = new CheckBox();
             CHasSugar.Text = "Sugar";
             CHasSugar.Name = "CHasSugar";
+            CHasSugar.Checked = false;
+            HasSugar = CHasSugar.Checked;
             CHasSugar.CheckedChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CHasSugar);
 
@@ -37,6 +42,7 @@ namespace SDM_Coffee_Shop
                 CTheine.Items.Add(item + " Theine");
             }
             CTheine.SelectedIndex = 1;
+            Theine = (typeOfTheine)CTheine.SelectedIndex;
             CTheine.Name = "CTheine";
             CTheine.TextChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CTheine);
@@ -53,7 +59,7 @@ namespace SDM_Coffee_Shop
                     HasMilk = ((CheckBox)x).Checked;
                     break;
 
-                case "CSugar":
+                case "CHasSugar":
                     HasSugar = ((CheckBox)x).Checked;
                     break;
 

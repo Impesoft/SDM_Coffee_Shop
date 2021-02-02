@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    public abstract class Cocktail : Beverage
+    public class Cocktail : Beverage
     {
         public bool HasIce { get; set; }
 
@@ -21,6 +21,8 @@ namespace SDM_Coffee_Shop
             CheckBox CHasIce = new CheckBox();
             CHasIce.Text = "With Ice";
             CHasIce.Name = "CHasIce";
+            CHasIce.Checked = false;
+            HasIce = false;
             CHasIce.CheckedChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CHasIce);
 

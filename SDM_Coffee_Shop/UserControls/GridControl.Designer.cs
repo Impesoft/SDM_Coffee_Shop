@@ -66,15 +66,13 @@ namespace SDM_Coffee_Shop.UserControls
             this.PBGrid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PBGrid.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PBGrid.Location = new System.Drawing.Point(24, 37);
-            this.PBGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PBGrid.Margin = new System.Windows.Forms.Padding(2);
             this.PBGrid.Name = "PBGrid";
             this.PBGrid.Size = new System.Drawing.Size(150, 162);
             this.PBGrid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PBGrid.TabIndex = 4;
             this.PBGrid.TabStop = false;
             this.PBGrid.Click += new System.EventHandler(this.btnInfosmall_Click);
-            this.PBGrid.MouseEnter += new System.EventHandler(this.PBGrid_MouseEnter);
-            this.PBGrid.MouseLeave += new System.EventHandler(this.buttonHoover_MouseLeave);
             // 
             // GridControl
             // 
@@ -87,9 +85,8 @@ namespace SDM_Coffee_Shop.UserControls
             this.Controls.Add(this.lblName);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "GridControl";
-            this.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Padding = new System.Windows.Forms.Padding(3);
             this.Size = new System.Drawing.Size(195, 243);
-            this.MouseLeave += new System.EventHandler(this.buttonHoover_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.PBGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

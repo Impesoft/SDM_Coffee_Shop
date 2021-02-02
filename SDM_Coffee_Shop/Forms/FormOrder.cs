@@ -16,7 +16,7 @@ namespace SDM_Coffee_Shop
 
             ResourceManager rm = Properties.Resources.ResourceManager;
             Bitmap myImage = (Bitmap)rm.GetObject(CurrentBeverage.Image);
-            metroLabel1.Text = CurrentBeverage.Description;
+            //TOREMOVE metroLabel1.Text = CurrentBeverage.Description;
 
             int i = 65;
 

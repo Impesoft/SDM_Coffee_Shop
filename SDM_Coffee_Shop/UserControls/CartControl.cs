@@ -5,16 +5,15 @@ namespace SDM_Coffee_Shop.UserControls
 {
     public partial class CartControl : UserControl
     {
-       
-        public CartControl()
-        {
-            InitializeComponent();
-        }
-
         public int CartID
         {
             get { return Convert.ToInt32(lblid.Text); }
             set { lblid.Text = value.ToString(); ; }
+        }
+
+        public CartControl()
+        {
+            InitializeComponent();
         }
 
         public IBeverage CurrentBeverage { get; set; }
@@ -48,6 +47,5 @@ namespace SDM_Coffee_Shop.UserControls
         {
             OnRemoveFromCartButtonClicked(e);
         }
-               
     }
 }

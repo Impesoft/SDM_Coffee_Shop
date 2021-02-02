@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    public abstract class Beverage : IBeverage
+    public class Beverage : IBeverage
     {
         private double _price;
 
@@ -24,7 +24,7 @@ namespace SDM_Coffee_Shop
         public string Name { get; set; }
         public int ProductID { get; set; }
 
-        protected Beverage()
+        public Beverage()
         {
             ProductID = PID;
             PID++;

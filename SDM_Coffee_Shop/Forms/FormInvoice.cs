@@ -12,10 +12,12 @@ namespace SDM_Coffee_Shop
 {
     public partial class FormInvoice : MetroFramework.Forms.MetroForm
     {
+        private ShoppingCart shoppingCart { get; set; }
+
         public FormInvoice()
         {
             InitializeComponent();
-
+            shoppingCart = ShoppingCart.GetShoppingCart();
             label1.Text = GetProducts();
             label2.Text = GetTotalPrice();
         }
@@ -23,11 +25,11 @@ namespace SDM_Coffee_Shop
         public string GetProducts()
         {
             string output = "";
-            foreach (var item in ShoppingCart.GetShoppingCart()._beverages)
+            foreach (IBeverage beverage in shoppingCart.GetBeveragesInCart())
             {
-                string[] properties = item.ToString().Split(',');
+                string[] properties = beverage.ToString().Split(',');
 
-                output += $"\n\n{item.UniqueID}. {item.Name} Price: {item.Price} euro\n";
+                output += $"\n\n{beverage.UniqueID}. {beverage.Name} Price: {beverage.Price} euro\n";
                 foreach (string prop in properties)
                 {
                     output += prop + " ";

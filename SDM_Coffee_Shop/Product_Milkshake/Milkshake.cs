@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    internal abstract class Milkshake : Beverage
+    internal class Milkshake : Beverage
     {
         public bool HasDairy { get; set; }
         public bool HasWhippedCream { get; set; }

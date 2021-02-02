@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace SDM_Coffee_Shop
 {
-    internal abstract class Coffee : Beverage
+    internal class Coffee : Beverage
     {
         public typeOfCaffeine Caffeine { get; set; }
 
@@ -23,12 +23,16 @@ namespace SDM_Coffee_Shop
             CheckBox CHasMilk = new CheckBox();
             CHasMilk.Text = "Milk";
             CHasMilk.Name = "CHasMilk";
+            CHasMilk.Checked = false;
+            HasMilk = CHasMilk.Checked;
             CHasMilk.CheckedChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CHasMilk);
 
             CheckBox CHasSugar = new CheckBox();
             CHasSugar.Text = "Sugar";
             CHasSugar.Name = "CHasSugar";
+            CHasSugar.Checked = false;
+            HasSugar = CHasSugar.Checked;
             CHasSugar.CheckedChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CHasSugar);
 
@@ -39,6 +43,7 @@ namespace SDM_Coffee_Shop
                 CCaffeine.Items.Add(item + " Caffeïne");
             }
             CCaffeine.SelectedIndex = 1;
+            Caffeine = (typeOfCaffeine)CCaffeine.SelectedIndex;
             CCaffeine.Name = "CCaffeine";
             CCaffeine.TextChanged += new System.EventHandler(this.SetControls);
             TempList.Add(CCaffeine);

@@ -7,9 +7,12 @@ namespace SDM_Coffee_Shop.UserControls
 {
     public partial class GridControl : UserControl
     {
-        public IBeverage CurrentBeverage { get; set; }
+        //TOREMOVE public IBeverage CurrentBeverage { get; set; }
         private ShoppingCart _cart;
+
         private IBeverageRepo _repo;
+
+        public int GridID { get; set; }
 
         public GridControl()
         {
@@ -18,8 +21,6 @@ namespace SDM_Coffee_Shop.UserControls
             _cart = ShoppingCart.GetShoppingCart();
             _repo = new BeverageRepo();
         }
-
-        public int GridID { get; set; }
 
         public string MyProductName
         {
@@ -50,27 +51,26 @@ namespace SDM_Coffee_Shop.UserControls
         //ADD EVENT HANDLER
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
-
             IBeverage beverage = _repo.GetBeverage(GridID);
             FormOrder form = new FormOrder(beverage);
 
             form.OrderButtonClicked += AddToCartButtonClicked;
             form.ShowDialog();
-            CurrentBeverage = form.CurrentBeverage;
+            //TOREMOVE CurrentBeverage = form.CurrentBeverage;
         }
 
         //ADD EVENT HANDLER
         public event EventHandler AddToCartButtonClicked;
 
-        protected virtual void OnAddToCartButtonClicked(object sender, EventArgs e)
-        {
-            AddToCartButtonClicked?.Invoke(sender, e);
-        }
+        //TOREMOVE  protected virtual void OnAddToCartButtonClicked(object sender, EventArgs e)
+        //    {
+        //       AddToCartButtonClicked?.Invoke(sender, e);
+        //    }
 
-        private void btnAddToCart_Click(object sender, EventArgs e)
-        {
-            OnAddToCartButtonClicked(sender, e);
-        }
+        //TOREMOVE private void btnAddToCart_Click(object sender, EventArgs e)
+        //{
+        //  OnAddToCartButtonClicked(sender, e);
+        //}
 
         private void buttonHoover_MouseLeave(object sender, EventArgs e)
         {

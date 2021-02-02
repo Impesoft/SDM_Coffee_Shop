@@ -11,7 +11,7 @@ namespace SDM_Coffee_Shop
         private FileReaderWriter readerWriter;
         private ShoppingCart _cart;
         private IBeverageRepo beverageRepo;
-        private int iDCounter = 1;
+        private static int iDCounter = 1;
 
         public FormMain()
         {
@@ -38,6 +38,7 @@ namespace SDM_Coffee_Shop
                     Image = beverage.Image
                 };
                 i++;
+
                 myUserControl.AddToCartButtonClicked += AddToCartClickedInGridControl;
 
                 flowLayoutPanel1.Controls.Add(myUserControl);
@@ -47,17 +48,15 @@ namespace SDM_Coffee_Shop
         private void GenerateShoppingCartList(IBeverage beverage)
         {
             int i = 1;
-            
+
             CartControl myUserControl = new CartControl
             {
                 Name = $"CartControl{i}",
                 CartID = beverage.UniqueID,
                 MyProductName = beverage.Name,
                 Price = beverage.Price.ToString(),
-                Info = beverage.ToString().Replace(',','\n'),                
+                Info = beverage.ToString().Replace(',', '\n'),
                 CurrentBeverage = beverage
-
-                //info toevoegen aan usercontrol via ToString Split
             };
             myUserControl.RemoveFromCartButtonClicked += RemoveFromCartClickedInCartControl;
             i++;
@@ -72,6 +71,7 @@ namespace SDM_Coffee_Shop
             SetAmountLabel();
             iDCounter = 1;
         }
+
         private void AddToCartClickedInGridControl(object sender, EventArgs e)
         {
             if (_cart.GetAmountOfItemsInCart() == 10)
@@ -82,9 +82,12 @@ namespace SDM_Coffee_Shop
             {
                 if (_cart.GetAmountOfItemsInCart() == 9)
                 {
-                    SetLabelsRed();
+                    SetLabelsColor(Color.Red);
                 }
-
+                if (_cart.GetAmountOfItemsInCart() == 8)
+                {
+                    SetLabelsColor(Color.Orange);
+                }
                 var userControl = sender as FormOrder;
                 userControl.CurrentBeverage.UniqueID = iDCounter;
 
@@ -95,13 +98,17 @@ namespace SDM_Coffee_Shop
                 SetAmountLabel();
                 iDCounter++;
             }
-
         }
+
         private void RemoveFromCartClickedInCartControl(object sender, EventArgs e)
         {
             if (_cart.GetAmountOfItemsInCart() == 10)
             {
-                SetLabelsWhite();
+                SetLabelsColor(Color.Orange);
+            }
+            if (_cart.GetAmountOfItemsInCart() == 9)
+            {
+                SetLabelsColor(Color.White);
             }
 
             var userControl = sender as CartControl;
@@ -109,38 +116,45 @@ namespace SDM_Coffee_Shop
 
             flowLayoutPanel2.Controls.Remove(userControl);
             lblPrice.Text = _cart.CalculatePrice().ToString();
-            SetAmountLabel();            
+            SetAmountLabel();
         }
 
         private void btnConfirmOrder_Click(object sender, EventArgs e)
         {
-            List<string> result = new List<string>();
-            result.Add($"Amount of products = {_cart.GetAmountOfItemsInCart()} | ");
-            result.Add($"Total price = {_cart.CalculatePrice()} | ");            
-            foreach (var beverage in _cart.GetBeveragesInCart())
-            {                
-                result.Add($"{beverage.Name}, {beverage.Price}, {beverage.ToString()} | ");
-            }            
-            readerWriter.WriteDataToFile(result.ToArray());
+            WriteToLog();
             FormInvoice form = new FormInvoice();
             form.ShowDialog();
-        }        
+        }
+
+        private void WriteToLog()
+        {
+            List<string> result = new List<string>();
+            result.Add($"Amount of products = {_cart.GetAmountOfItemsInCart()} | ");
+            result.Add($"Total price = {_cart.CalculatePrice()} | ");
+            foreach (var beverage in _cart.GetBeveragesInCart())
+            {
+                result.Add($"{beverage.Name}, {beverage.Price}, {beverage.ToString()} | ");
+            }
+            readerWriter.WriteDataToFile(result.ToArray());
+        }
 
         private void SetAmountLabel()
         {
             lblAmountOfItemsInCart.Text = _cart.GetAmountOfItemsInCart().ToString();
         }
-        private void SetLabelsRed()
+
+        private void SetLabelsColor(Color color)
         {
-            lbl1.ForeColor = Color.Red;
-            lblAmountOfItemsInCart.ForeColor = Color.Red;
-            label2.ForeColor = Color.Red;
+            lbl1.ForeColor = color;
+            lblAmountOfItemsInCart.ForeColor = color;
+            label2.ForeColor = color;
         }
-        private void SetLabelsWhite()
-        {
-            lbl1.ForeColor = Color.WhiteSmoke;
-            lblAmountOfItemsInCart.ForeColor = Color.WhiteSmoke;
-            label2.ForeColor = Color.WhiteSmoke;
-        }
+
+        //TOREMOVE private void SetLabelsWhite()
+        //{
+        //  lbl1.ForeColor = Color.WhiteSmoke;
+        //lblAmountOfItemsInCart.ForeColor = Color.WhiteSmoke;
+        // label2.ForeColor = Color.WhiteSmoke;
+        //}
     }
 }

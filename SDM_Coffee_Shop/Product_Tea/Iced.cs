@@ -20,10 +20,11 @@ namespace SDM_Coffee_Shop
         {
             List<Control> TempList = base.GetControls();
 
-            Label LBLPercentageAlcohol = new Label();
-            LBLPercentageAlcohol.Text = "Amount of Ice Cubes: ";
-            LBLPercentageAlcohol.Width = 200;
-            TempList.Add(LBLPercentageAlcohol);
+            Label LBLAmountOfCubes = new Label();
+            LBLAmountOfCubes.Text = "Amount of Ice Cubes: ";
+            LBLAmountOfCubes.Width = 200;
+            LBLAmountOfCubes.Name = "LBLPercentageAlcohol";
+            TempList.Add(LBLAmountOfCubes);
 
             NumericUpDown CAmountOfCubes = new NumericUpDown();
             CAmountOfCubes.Text = "Amount of Cubes";
@@ -31,6 +32,7 @@ namespace SDM_Coffee_Shop
             CAmountOfCubes.Value = 3;
             CAmountOfCubes.Minimum = 0;
             CAmountOfCubes.Maximum = 5;
+            AmountOfCubes = (int)CAmountOfCubes.Value;
 
             CAmountOfCubes.DecimalPlaces = 0;
             CAmountOfCubes.ValueChanged += new System.EventHandler(this.SetControls);
@@ -44,7 +46,10 @@ namespace SDM_Coffee_Shop
             base.SetControls(sender, e);
             if ((sender as Control).Name == "CAmountOfCubes")
             {
-                AmountOfCubes = (int)((NumericUpDown)sender).Value;
+                AmountOfCubes = ((int)((NumericUpDown)sender).Value);
+            }
+            if ((sender as Control).Name == "LBLPercentageAlcohol")
+            {
             }
         }
 
