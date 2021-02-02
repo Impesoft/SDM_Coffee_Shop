@@ -17,16 +17,17 @@ namespace SDM_Coffee_Shop
 
         public void WriteDataToFile(string textToWriteToFile, string path)
         {
-            using (StreamWriter writer = new StreamWriter(path, true)) 
-            { 
-                writer.WriteLine(textToWriteToFile); 
-            }             
+            using (StreamWriter writer = new StreamWriter(path, true))
+            {
+                writer.WriteLine(textToWriteToFile);
+            }
         }
 
         public void WriteDataToFile(string[] lines)
         {
             WriteDataToFile(lines, PATH_LOG_ORDERS);
         }
+
         public void WriteDataToFile(string[] lines, string path)
         {
             using (StreamWriter writer = new StreamWriter(path, true))
@@ -38,7 +39,7 @@ namespace SDM_Coffee_Shop
                     writer.Write($" {line}");
                 }
             }
-            //true om nieuwe tekst toe te voegen ipv overschrijven.           
+            //true om nieuwe tekst toe te voegen ipv overschrijven.
         }
 
         public List<string> ReadDataFromFile(string path)
@@ -53,7 +54,6 @@ namespace SDM_Coffee_Shop
                 }
             }
             return lines;
-        }        
-
+        }
     }
 }

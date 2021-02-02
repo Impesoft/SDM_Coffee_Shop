@@ -7,7 +7,6 @@ namespace SDM_Coffee_Shop.UserControls
 {
     public partial class GridControl : UserControl
     {
-        //TOREMOVE public IBeverage CurrentBeverage { get; set; }
         private ShoppingCart _cart;
 
         private IBeverageRepo _repo;
@@ -48,7 +47,6 @@ namespace SDM_Coffee_Shop.UserControls
             }
         }
 
-        //ADD EVENT HANDLER
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
             IBeverage beverage = _repo.GetBeverage(GridID);
@@ -56,21 +54,9 @@ namespace SDM_Coffee_Shop.UserControls
 
             form.OrderButtonClicked += AddToCartButtonClicked;
             form.ShowDialog();
-            //TOREMOVE CurrentBeverage = form.CurrentBeverage;
         }
 
-        //ADD EVENT HANDLER
         public event EventHandler AddToCartButtonClicked;
-
-        //TOREMOVE  protected virtual void OnAddToCartButtonClicked(object sender, EventArgs e)
-        //    {
-        //       AddToCartButtonClicked?.Invoke(sender, e);
-        //    }
-
-        //TOREMOVE private void btnAddToCart_Click(object sender, EventArgs e)
-        //{
-        //  OnAddToCartButtonClicked(sender, e);
-        //}
 
         private void buttonHoover_MouseLeave(object sender, EventArgs e)
         {

@@ -149,12 +149,5 @@ namespace SDM_Coffee_Shop
             lblAmountOfItemsInCart.ForeColor = color;
             label2.ForeColor = color;
         }
-
-        //TOREMOVE private void SetLabelsWhite()
-        //{
-        //  lbl1.ForeColor = Color.WhiteSmoke;
-        //lblAmountOfItemsInCart.ForeColor = Color.WhiteSmoke;
-        // label2.ForeColor = Color.WhiteSmoke;
-        //}
     }
 }
