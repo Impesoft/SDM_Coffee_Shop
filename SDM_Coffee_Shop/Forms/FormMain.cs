@@ -90,10 +90,12 @@ namespace SDM_Coffee_Shop
                 }
                 var userControl = sender as FormOrder;
                 userControl.CurrentBeverage.UniqueID = iDCounter;
+                IBeverage onsnieuwdrankje = new Beverage();
+                onsnieuwdrankje = userControl.CurrentBeverage;
 
                 _cart.AddBeverageToCart(userControl.CurrentBeverage);
 
-                GenerateShoppingCartList(userControl.CurrentBeverage);
+                GenerateShoppingCartList(onsnieuwdrankje);
                 lblPrice.Text = _cart.CalculatePrice().ToString();
                 SetAmountLabel();
                 iDCounter++;
