@@ -52,7 +52,7 @@ namespace SDM_Coffee_Shop
             CartControl myUserControl = new CartControl
             {
                 Name = $"CartControl{i}",
-                CartID = beverage.UniqueID,
+                CartID = _cart.GetBeveragesInCart().Count,
                 MyProductName = beverage.Name,
                 Price = beverage.Price.ToString(),
                 Info = beverage.ToString().Replace(',', '\n'),
@@ -89,13 +89,10 @@ namespace SDM_Coffee_Shop
                     SetLabelsColor(Color.Orange);
                 }
                 var userControl = sender as FormOrder;
-                userControl.CurrentBeverage.UniqueID = iDCounter;
-                IBeverage onsnieuwdrankje = new Beverage();
-                onsnieuwdrankje = userControl.CurrentBeverage;
 
                 _cart.AddBeverageToCart(userControl.CurrentBeverage);
 
-                GenerateShoppingCartList(onsnieuwdrankje);
+                GenerateShoppingCartList(userControl.CurrentBeverage);
                 lblPrice.Text = _cart.CalculatePrice().ToString();
                 SetAmountLabel();
                 iDCounter++;
@@ -119,6 +116,12 @@ namespace SDM_Coffee_Shop
             flowLayoutPanel2.Controls.Remove(userControl);
             lblPrice.Text = _cart.CalculatePrice().ToString();
             SetAmountLabel();
+            int counter = 1;
+            foreach (CartControl myControl in flowLayoutPanel2.Controls)
+            {
+                myControl.CartID = counter;
+                counter++;
+            }
         }
 
         private void btnConfirmOrder_Click(object sender, EventArgs e)

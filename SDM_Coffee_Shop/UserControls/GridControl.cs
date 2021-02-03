@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Resources;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace SDM_Coffee_Shop.UserControls
 {
@@ -49,7 +50,10 @@ namespace SDM_Coffee_Shop.UserControls
 
         private void btnInfosmall_Click(object sender, EventArgs e)
         {
-            IBeverage beverage = _repo.GetBeverage(GridID);
+            Type bevtype = _repo.GetBeverage(GridID).GetType();
+            Beverage beverage = (Beverage)Activator.CreateInstance(bevtype);
+            beverage.UniqueID = beverage.ProductID;
+
             FormOrder form = new FormOrder(beverage);
 
             form.OrderButtonClicked += AddToCartButtonClicked;

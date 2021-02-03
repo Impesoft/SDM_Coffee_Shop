@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SDM_Coffee_Shop
 {
@@ -17,11 +18,12 @@ namespace SDM_Coffee_Shop
         public string GetProducts()
         {
             string output = "";
-            foreach (IBeverage beverage in shoppingCart.GetBeveragesInCart())
+            List<IBeverage> cart = shoppingCart.GetBeveragesInCart();
+            foreach (IBeverage beverage in cart)
             {
                 string[] properties = beverage.ToString().Split(',');
 
-                output += $"\n\n{beverage.UniqueID}. {beverage.Name} Price: {beverage.Price} euro\n";
+                output += $"\n\n{cart.IndexOf(beverage)}. {beverage.Name} Price: {beverage.Price} euro\n";
                 foreach (string prop in properties)
                 {
                     output += prop + " ";
